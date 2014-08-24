@@ -1,0 +1,13 @@
+url: http://rogchap.com
+#markdown: rdiscount
+permalink: pretty
+pygments: true
+exclude: ['CNAME', 'README.md']
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "default"
