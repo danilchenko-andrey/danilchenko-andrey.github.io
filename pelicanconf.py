@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Andrey Danilchenko'
 SITENAME = u'4ducks'
-SITEURL = 'http://localhost:8000/'
+SITEURL = u'http://www.4ducks.ru'
 
 PATH = 'content'
 
@@ -15,7 +15,6 @@ DEFAULT_LANG = 'ru'
 LOCALE='ru_RU'
 
 STATIC_PATHS = ['pictures']
-PLUGINS=['extract_toc.extract_toc']
 
 # theme
 THEME='notebook-theme'
