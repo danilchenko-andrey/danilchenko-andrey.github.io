@@ -19,6 +19,10 @@ STATIC_PATHS = ['images']
 # theme
 THEME='notebook-theme'
 FAVICON='images/favicon.png'
+FAVICON_32='images/favicon.32.png'
+FAVICON_57='images/favicon.57.png'
+FAVICON_72='images/favicon.72.png'
+FAVICON_114='images/favicon.114.png'
 AVATAR='images/avatar.png'
 
 SITESUBTITLE='Andrey Danilchenko dev page'
@@ -27,7 +31,9 @@ GITHUB_URL='https://github.com/danilchenko-andrey'
 
 SOCIAL=(('github', 'https://github.com/danilchenko-andrey'),
         ('linkedin', 'https://ru.linkedin.com/in/danilchenko/'),
-        ('twitter', 'https://twitter.com/mir_nomer_nol')
+        ('twitter', 'https://twitter.com/mir_nomer_nol'),
+        ('Gplus', u'https://plus.google.com/+АндрейДанильченко'),
+        #('mail', 'mailto:danilchenko.andrey@4ducks.ru'),
 )
 
 # Feed generation is usually not desired when developing

@@ -10,7 +10,10 @@
 
   <!-- Style Meta Data -->
   <link rel="stylesheet" href="http://www.4ducks.ru/theme/css/notebook.css" type="text/css" />
-  <link rel="icon" type="image/png" href="http://www.4ducks.ru/{{FAVICON}}">
+  <link rel="icon" type="image/png" href="http://www.4ducks.ru/{{FAVICON_32}}">
+  <link rel="apple-touch-icon" type="image/png" href="http://www.4ducks.ru/{{FAVICON_57}}"> <!-- iPhone -->
+  <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="http://www.4ducks.ru/{{FAVICON_72}}"> <!-- iPad -->
+  <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="http://www.4ducks.ru/{{FAVICON_114}}"> <!-- iPhone4 -->
 
   <!-- Feed Meta Data -->
   <link href="http://www.4ducks.ru/{{FEED}}" type="application/atom+xml" rel="alternate" title="{{SITENAME}} ATOM Feed" />
@@ -38,7 +41,7 @@
       {% for name, link in SOCIAL %}
       <li style="list-style-image : url(http://www.4ducks.ru/theme/images/icons/{{name|lower}}.png);"><a href="{{link}}">{{name}}</a></li>
       {% endfor %}
-      <li style="list-style-image : url(http://www.4ducks.ru/theme/images/icons/rss.png);"><a href="http://www.4ducks.ru/{{FEED_ATOM}}" rel="alternate"><i class="icon-bookmark icon-large"></i>Atom feed</a></li>
+      <!--li style="list-style-image : url(http://www.4ducks.ru/theme/images/icons/rss.png);"><a href="http://www.4ducks.ru/{{FEED_ATOM}}" rel="alternate"><i class="icon-bookmark icon-large"></i>Atom feed</a></li-->
       {% if FEED_RSS %}
       <li style="list-style-image : url(http://www.4ducks.ru/theme/images/icons/rss.png);"><a href="http://www.4ducks.ru/{{FEED_RSS}}" rel="alternate">RSS feed</a></li>
       {% endif %}
