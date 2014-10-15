@@ -161,6 +161,12 @@ aside > h2 {
   margin-bottom: 5px;
 }
 
+aside .modification {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+}
+
 #avatar {
   width: 100px;
   border-radius: 50%;

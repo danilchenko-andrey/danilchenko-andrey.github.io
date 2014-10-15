@@ -33,4 +33,4 @@ Summary: "Содержание курса по рекомендательным 
   	* sequential item2item
 
 
-Посты по теме: {tag}itmo
+Посты по теме: [itmo]({category}itmo)
