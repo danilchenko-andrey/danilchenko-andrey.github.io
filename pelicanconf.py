@@ -15,7 +15,7 @@ DEFAULT_LANG = 'ru'
 LOCALE='ru_RU'
 
 STATIC_PATHS = ['pictures']
-PLUGINS=['extract_toc']
+PLUGINS=['extract_toc.extract_toc']
 
 # theme
 THEME='notebook-theme'
