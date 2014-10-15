@@ -14,12 +14,10 @@ DEFAULT_DATE_FORMAT='%A %d %B %Y'
 DEFAULT_LANG = 'ru'
 LOCALE='ru_RU'
 
-STATIC_PATHS = ['pictures']
-
 # theme
 THEME='notebook-theme'
-FAVICON='pictures/favicon.png'
-AVATAR='pictures/avatar.png'
+FAVICON='images/favicon.png'
+AVATAR='images/avatar.png'
 
 SITESUBTITLE='Andrey Danilchenko dev page'
 TWITTER_USERNAME='mir_nomer_nol'
