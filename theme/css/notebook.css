@@ -161,9 +161,9 @@ aside > h2 {
   margin-bottom: 5px;
 }
 
-aside > footer {
+aside .modification {
   position: fixed;
-  bottom: 0;
+  bottom: 30px;
   width: 100%;
 }
 
