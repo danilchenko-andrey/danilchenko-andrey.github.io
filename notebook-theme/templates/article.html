@@ -2,7 +2,7 @@
 {% block head %}
 {{ super() }}
 <meta name="twitter:creator" content="{{ TWITTER_USERNAME }}">
-<meta name="twitter:url" content="{{ SITEURL }}/{{ article.url }}">
+<meta name="twitter:url" content="http://www.4ducks.ru/{{ article.url }}">
 <meta name="twitter:title" content="{{ SITENAME }} ~ {{ article.title }}">
 <meta name="twitter:description" content="{{ article.summary }}">
 
@@ -16,7 +16,7 @@
 <section id="content">
     <article>
         <header class="post_list">
-            <h2 class="post_title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title }}">{{ article.title }}</a></h2>
+            <h2 class="post_title"><a href="http://www.4ducks.ru/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title }}">{{ article.title }}</a></h2>
         </header>
         {% if article.toc %}
             <nav class="toc">
@@ -27,15 +27,15 @@
             {{ article.content }}
         </div>
         <footer>
-            <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+            <a href="http://www.4ducks.ru/{{ article.author.url }}">{{ article.author }}</a>
             <br />
-            <span class="post_category label label-primary" ><a href="{{ SITEURL }}/{{ article.category.url }}" rel="bookmark" title="Permalink to {{ article.category|striptags }}"> {{ article.category }} </a></span>
+            <span class="post_category label label-primary" ><a href="http://www.4ducks.ru/{{ article.category.url }}" rel="bookmark" title="Permalink to {{ article.category|striptags }}"> {{ article.category }} </a></span>
             <br />
             <span class="post_date">{{ article.locale_date }}</span>
             {% if article.tags %}
             <div><span>Tags : </span>
                 {% for tag in article.tags %}
-                <span><a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}, </a></span>
+                <span><a href="http://www.4ducks.ru/{{ tag.url }}">#{{ tag }}, </a></span>
                 {% endfor %}
             </div>
             {% endif %}

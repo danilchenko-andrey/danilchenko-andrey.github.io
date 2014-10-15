@@ -2,7 +2,7 @@
 {% block head %}
 {{ super() }}
 <meta name="twitter:creator" content="{{ TWITTER_USERNAME }}">
-<meta name="twitter:url" content="{{ SITEURL }}/archives.html">
+<meta name="twitter:url" content="http://www.4ducks.ru/archives.html">
 <meta name="twitter:title" content="{{ SITENAME }} ~ Archives">
 <meta name="twitter:description" content="{{ SITENAME }} ~ Archives du site">
 
@@ -17,7 +17,7 @@
 <dl>
 {% for article in dates %}
     <dt>{{ article.locale_date }}</dt>
-    <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+    <dd><a href="http://www.4ducks.ru/{{ article.url }}">{{ article.title }}</a></dd>
 {% endfor %}
 </dl>
 {% endblock %}

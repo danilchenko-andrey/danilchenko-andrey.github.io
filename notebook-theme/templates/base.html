@@ -9,26 +9,26 @@
   <meta name="author" content="{{AUTHOR}}">
 
   <!-- Style Meta Data -->
-  <link rel="stylesheet" href="{{SITEURL}}/theme/css/notebook.css" type="text/css" />
-  <link rel="shortcut icon" href="{{SITEURL}}/{{FAVICON}}">
+  <link rel="stylesheet" href="http://www.4ducks.ru/theme/css/notebook.css" type="text/css" />
+  <link rel="icon" type="image/png" href="http://www.4ducks.ru/{{FAVICON}}">
 
   <!-- Feed Meta Data -->
-  <link href="{{SITEURL}}/{{FEED}}" type="application/atom+xml" rel="alternate" title="{{SITENAME}} ATOM Feed" />
+  <link href="http://www.4ducks.ru/{{FEED}}" type="application/atom+xml" rel="alternate" title="{{SITENAME}} ATOM Feed" />
   {% if FEED_RSS %}
-  <link href="{{SITEURL}}/{{FEED_RSS}}" type="application/atom+xml" rel="alternate" title="{{SITENAME}} RSS Feed" />
+  <link href="http://www.4ducks.ru/{{FEED_RSS}}" type="application/atom+xml" rel="alternate" title="{{SITENAME}} RSS Feed" />
   {% endif %}
 
   <!-- Twitter Feed -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="{{TWITTER_USERNAME}}">
-  <meta name="twitter:image" content="{{SITEURL}}/{{AVATAR}}">
+  <meta name="twitter:image" content="http://www.4ducks.ru/{{AVATAR}}">
   {% endblock %}
 </head>
 
 <body>
   <!-- Sidebar -->
   <aside>
-    <p><a href="http://www.4ducks.ru/"><img id="avatar" src="{{SITEURL}}/{{AVATAR}}"></a></p>
+    <p><a href="http://www.4ducks.ru/"><img id="avatar" src="http://www.4ducks.ru/{{AVATAR}}"></a></p>
     <h1>{{SITENAME}}</h1>
     <h2>{{SITESUBTITLE}}</h2>
     <p>{{SIDEBAR_DIGEST}}</p>
@@ -36,11 +36,11 @@
     <h2>Social</h2>
     <ul class="social">
       {% for name, link in SOCIAL %}
-      <li style="list-style-image : url({{SITEURL}}/theme/images/icons/{{name|lower}}.png);"><a href="{{link}}">{{name}}</a></li>
+      <li style="list-style-image : url(http://www.4ducks.ru/theme/images/icons/{{name|lower}}.png);"><a href="{{link}}">{{name}}</a></li>
       {% endfor %}
-      <li style="list-style-image : url({{SITEURL}}/theme/images/icons/rss.png);"><a href="{{SITEURL}}/{{FEED_ATOM}}" rel="alternate"><i class="icon-bookmark icon-large"></i>Atom feed</a></li>
+      <li style="list-style-image : url(http://www.4ducks.ru/theme/images/icons/rss.png);"><a href="http://www.4ducks.ru/{{FEED_ATOM}}" rel="alternate"><i class="icon-bookmark icon-large"></i>Atom feed</a></li>
       {% if FEED_RSS %}
-      <li style="list-style-image : url({{SITEURL}}/theme/images/icons/rss.png);"><a href="{{SITEURL}}/{{FEED_RSS}}" rel="alternate">RSS feed</a></li>
+      <li style="list-style-image : url(http://www.4ducks.ru/theme/images/icons/rss.png);"><a href="http://www.4ducks.ru/{{FEED_RSS}}" rel="alternate">RSS feed</a></li>
       {% endif %}
     </ul>
     {% for title, link in MENUITEMS %}
@@ -50,7 +50,7 @@
     <h2>Pages</h2>
     <ul class="navbar">
       {% for p in PAGES %}
-      <li><a href="{{SITEURL}}/{{p.url}}">{{p.title}}</a></li>
+      <li><a href="http://www.4ducks.ru/{{p.url}}">{{p.title}}</a></li>
       {% endfor %}
     </ul>
     {% endif %}
@@ -58,7 +58,7 @@
     <h2>Categories</h2>
     <ul class="navbar">
       {% for cat, null in categories %}
-      <li{% if cat == category %} class="active"{% endif %}><a href="{{SITEURL}}/{{cat.url}}">{{cat}}</a></li>
+      <li{% if cat == category %} class="active"{% endif %}><a href="http://www.4ducks.ru/{{cat.url}}">{{cat}}</a></li>
       {% endfor %}
     </ul> 
     {% endif %}
