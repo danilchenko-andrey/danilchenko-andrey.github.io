@@ -16,6 +16,9 @@ LOCALE='ru_RU'
 
 STATIC_PATHS = ['images'] 
 
+
+SUMMARY_MAX_LENGTH = 50
+
 # theme
 THEME='notebook-theme'
 FAVICON='images/favicon.png'
