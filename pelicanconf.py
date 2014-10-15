@@ -34,6 +34,7 @@ SOCIAL=(('github', 'https://github.com/danilchenko-andrey'),
         ('twitter', 'https://twitter.com/mir_nomer_nol'),
         ('Gplus', u'https://plus.google.com/+АндрейДанильченко'),
         ('instagram', 'http://instagram.com/mir_nomer_nol'),
+        ('vk', 'http://vk.com/andrey.danilchenko')
         #('mail', 'mailto:danilchenko.andrey@4ducks.ru'),
 )
 
