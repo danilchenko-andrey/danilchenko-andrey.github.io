@@ -161,6 +161,12 @@ aside > h2 {
   margin-bottom: 5px;
 }
 
+aside > footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 #avatar {
   width: 100px;
   border-radius: 50%;
