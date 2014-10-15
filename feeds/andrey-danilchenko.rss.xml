@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4ducks</title><link>www.4ducks.ru/</link><description>Andrey Danilchenko dev page</description><atom:link href="www.4ducks.ru/feeds/andrey-danilchenko.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 15 Oct 2014 09:23:00 +0400</lastBuildDate><item><title>Заметки с RecSys 2014</title><link>www.4ducks.ru/zametki-s-recsys-2014.html</link><description>&lt;p&gt;На прошлой неделе в Foster City, CA прошла конференция RecSys'14.&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4ducks</title><link>/</link><description>Andrey Danilchenko dev page</description><atom:link href="/feeds/andrey-danilchenko.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 15 Oct 2014 09:23:00 +0400</lastBuildDate><item><title>Заметки с RecSys 2014</title><link>/zametki-s-recsys-2014.html</link><description>&lt;p&gt;На прошлой неделе в Foster City, CA прошла конференция RecSys'14.&lt;/p&gt;
 &lt;p&gt;[TOC]&lt;/p&gt;
 &lt;p&gt;Содержимое флешки с оглавлением: https://yadi.sk/d/-DVv6cBwbqyM8&lt;br /&gt;
 Видео всех докладов и постеров: https://www.youtube.com/playlist?list=PLaZufLfJumb9A95nS5AmY6G5mqYnwIfZX&lt;/p&gt;
@@ -254,4 +254,4 @@ q6: do users use cultural vs musicological reason for declaring songs? cultural 
   * choose point with hight expected improvement
   * return next optimal point
 Быстро сходится, отлично параллелится (можно делать мультисемплинг), можно исопльзовать GPU, можно как угодно задавать objective function… И все это уже работает в их production. И open source.&lt;br /&gt;
-Короче, надо брать: https://github.com/Yelp/MOE&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrey Danilchenko</dc:creator><pubDate>Wed, 15 Oct 2014 09:23:00 +0400</pubDate><guid>tag:,2014-10-15:www.4ducks.ru/zametki-s-recsys-2014.html</guid></item></channel></rss>
+Короче, надо брать: https://github.com/Yelp/MOE&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrey Danilchenko</dc:creator><pubDate>Wed, 15 Oct 2014 09:23:00 +0400</pubDate><guid>tag:,2014-10-15:zametki-s-recsys-2014.html</guid></item></channel></rss>
