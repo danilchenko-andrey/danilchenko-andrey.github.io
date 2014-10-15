@@ -107,6 +107,7 @@ cf_upload: publish
 
 github: publish
 	cp -R images $(OUTPUTDIR)
+	cp CNAME $(OUTPUTDIR)
 	ghp-import -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
 
