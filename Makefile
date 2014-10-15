@@ -65,8 +65,10 @@ regenerate:
 
 serve:
 ifdef PORT
+	cp -R images $(OUTPUTDIR)
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server $(PORT)
 else
+	cp -R images $(OUTPUTDIR)
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server
 endif
 
@@ -104,6 +106,7 @@ cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
 
 github: publish
+	cp -R images $(OUTPUTDIR)
 	ghp-import -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
 

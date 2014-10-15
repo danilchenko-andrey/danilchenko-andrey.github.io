@@ -14,6 +14,8 @@ DEFAULT_DATE_FORMAT='%A %d %B %Y'
 DEFAULT_LANG = 'ru'
 LOCALE='ru_RU'
 
+STATIC_PATHS = ['images'] 
+
 # theme
 THEME='notebook-theme'
 FAVICON='images/favicon.png'
