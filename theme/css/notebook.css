@@ -167,6 +167,12 @@ aside .modification {
   width: 100%;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 #avatar {
   width: 100px;
   border-radius: 50%;
