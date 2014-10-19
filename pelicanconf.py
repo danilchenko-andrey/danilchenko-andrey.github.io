@@ -4,7 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Andrey Danilchenko'
 SITENAME = u'4ducks'
-SITEURL = ''
+#SITEURL = 'http://www.4ducks.ru'
+SITEURL = 'http://localhost:8000'
 MODIFICATION_TIME = '2014-10-19 07:39'
 
 PATH = 'content'

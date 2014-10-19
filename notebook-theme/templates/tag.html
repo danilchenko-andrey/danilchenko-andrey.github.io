@@ -2,7 +2,7 @@
 {% block head %}
 {{ super() }}
 <meta name="twitter:creator" content="{{ TWITTER_USERNAME }}">
-<meta name="twitter:url" content="http://www.4ducks.ru/{{ tag.url }}">
+<meta name="twitter:url" content="{{SITEURL}}/{{ tag.url }}">
 <meta name="twitter:title" content="{{ SITENAME }} ~ {{ tag }}">
 <meta name="twitter:description" content="Articles of {{ tag }}">
 
