@@ -5,7 +5,7 @@ Summary: "Содержание курса по рекомендательным 
 
 
 #Содержание курса
-  1. Introduction 
+  1. [Introduction]({filename}/itmo-recsys-2014/lecture1.md)
     * memory-based CF
     * SVD
     * Brief review of content-based RS

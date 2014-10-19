@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Andrey Danilchenko'
 SITENAME = u'4ducks'
 SITEURL = ''
+MODIFICATION_TIME = '2014-10-19 07:31'
 
 PATH = 'content'
 
