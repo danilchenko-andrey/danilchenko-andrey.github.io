@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4ducks</title><link>/</link><description>Andrey Danilchenko dev page</description><atom:link href="/feeds/andrey-danilchenko.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 18 Oct 2014 11:05:00 +0400</lastBuildDate><item><title>ITMO RS 2014 ~ Lecture 1</title><link>/itmo-rs-2014-lecture-1.html</link><description>&lt;h2&gt;Введение в рекомендательные системы&lt;/h2&gt;
+&lt;h3&gt;Краткое содержание&lt;/h3&gt;
 &lt;p&gt;Лекция-введение. Рассказывал про рекомендательные системы в целом, о том, какие они бываю и какие данные используют.
 Разобрали kNN-модели и SVD, рассказал как применять SGD и ALS для обучения SVD. Поговорили про evaluation (общая схема и чуть более предметно про online-тестирование).&lt;/p&gt;
 &lt;h3&gt;Ссылки&lt;/h3&gt;
