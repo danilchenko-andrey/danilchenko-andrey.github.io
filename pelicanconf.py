@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from datetime import datetime
 
 AUTHOR = u'Andrey Danilchenko'
 SITENAME = u'4ducks'
 #SITEURL = 'http://www.4ducks.ru'
 SITEURL = 'http://localhost:8000'
-MODIFICATION_TIME = '2014-10-19 07:39'
+
+MODIFICATION_TIME = datetime.now().strftime('%Y-%m-%d %H:%M')
 
 PATH = 'content'
 
