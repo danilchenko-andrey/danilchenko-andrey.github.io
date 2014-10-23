@@ -18,6 +18,7 @@ Summary: "Содержание курса по рекомендательным 
   3. SVD environment
     * similarities
     * metric trees
+    * LSH, ALSH
     * explanation
   4. Context-aware RS
     * tensor factorization
