@@ -33,6 +33,6 @@ Summary: "Содержание курса по рекомендательным 
     * LME
     * sequential item2item
 
-Посты по теме: [itmo]({category}itmo)
+Посты по теме: [itmo](http://www.4ducks.ru/category/itmo.html)
 
 Записаться можно [в гуглотаблице](https://docs.google.com/spreadsheets/d/1v_Hqs7BjI-hR8tPOsRJHJ8wrtZHzQnB0JeuW3s09cT8/edit?usp=sharing)
