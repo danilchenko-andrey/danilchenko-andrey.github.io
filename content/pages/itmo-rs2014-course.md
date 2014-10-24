@@ -14,12 +14,12 @@ Summary: "Содержание курса по рекомендательным 
     * iALS
     * ALS1, iALS1
     * rankALS
-    * initialization
+    * explanation
   3. SVD environment
     * similarities
     * metric trees
     * LSH, ALSH
-    * explanation
+    * initialization
   4. Context-aware RS
     * tensor factorization
     * factorization machines
