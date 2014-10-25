@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4ducks</title><link>http://www.4ducks.ru/</link><description>Andrey Danilchenko dev page</description><atom:link href="http://www.4ducks.ru/feeds/andrey-danilchenko.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 18 Oct 2014 11:05:00 +0400</lastBuildDate><item><title>ITMO RS 2014 ~ Lecture 1</title><link>http://www.4ducks.ru/itmo-rs-2014-lecture-1.html</link><description>&lt;h2&gt;Введение в рекомендательные системы&lt;/h2&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4ducks</title><link>http://www.4ducks.ru/</link><description>Andrey Danilchenko dev page</description><atom:link href="http://www.4ducks.ru/feeds/andrey-danilchenko.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 25 Oct 2014 10:52:00 +0400</lastBuildDate><item><title>ITMO RS 2014 ~ Lecture 2</title><link>http://www.4ducks.ru/itmo-rs-2014-lecture-2.html</link><description>&lt;h2&gt;SVD continued&lt;/h2&gt;
+&lt;h3&gt;Краткое содержание&lt;/h3&gt;
+&lt;p&gt;Рассказ про iALS, оптимизацию ALS1 и iALS1, rank ALS. Объяснение SVD рекомендаций.&lt;/p&gt;
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/40706158" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
+
+&lt;h3&gt;Статьи&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hu Y., Koren Y., Volinsky C. &lt;a href="http://yadi.sk/d/b4BEAs5t6NUOp"&gt;Collaborative filtering for implicit feedback datasets&lt;/a&gt; //Data Mining, 2008. ICDM'08. Eighth IEEE International Conference on. – IEEE, 2008. – С. 263-272.&lt;/li&gt;
+&lt;li&gt;Pilászy I., Zibriczky D., Tikk D. &lt;a href="http://yadi.sk/d/ye_l0Z0u6vUvO"&gt;Fast als-based matrix factorization for explicit and implicit feedback datasets&lt;/a&gt; //Proceedings of the fourth ACM conference on Recommender systems. – ACM, 2010. – С. 71-78.&lt;/li&gt;
+&lt;li&gt;Takács G., Tikk D. &lt;a href="http://yadi.sk/d/lg6F-o6j6y9qq"&gt;Alternating least squares for personalized ranking&lt;/a&gt; //Proceedings of the sixth ACM conference on Recommender systems. – ACM, 2012. – С. 83-90.&lt;/li&gt;
+&lt;li&gt;Herlocker J. L., Konstan J. A., Riedl J. &lt;a href="https://yadi.sk/i/ebMoIaU0cGHHy"&gt;Explaining collaborative filtering recommendations&lt;/a&gt; //Proceedings of the 2000 ACM conference on Computer supported cooperative work. – ACM, 2000. – С. 241-250.&lt;/li&gt;
+&lt;li&gt;Pilászy I., Tikk D. &lt;a href="http://yadi.sk/d/I4p_DeWg8paLQ"&gt;Explaining Recommendations of Factorization-Based Collaborative Filtering Algorithms&lt;/a&gt; //Acta Technica Jaurinensis. – 2009. – Т. 2. – №. 2. – С. pp. 233-248.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://www.4ducks.ru/itmo-rs-2014-lecture-1.html"&gt; &amp;lt;- Предыдущая лекция&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrey Danilchenko</dc:creator><pubDate>Sat, 25 Oct 2014 10:52:00 +0400</pubDate><guid>tag:www.4ducks.ru,2014-10-25:itmo-rs-2014-lecture-2.html</guid></item><item><title>ITMO RS 2014 ~ Lecture 1</title><link>http://www.4ducks.ru/itmo-rs-2014-lecture-1.html</link><description>&lt;h2&gt;Введение в рекомендательные системы&lt;/h2&gt;
 &lt;h3&gt;Краткое содержание&lt;/h3&gt;
 &lt;p&gt;Лекция-введение. Рассказывал про рекомендательные системы в целом, о том, какие они бываю и какие данные используют.
 Разобрали kNN-модели и SVD, рассказал как применять SGD и ALS для обучения SVD. Поговорили про evaluation (общая схема и чуть более предметно про online-тестирование).&lt;/p&gt;
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/40706158" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
+
 &lt;h3&gt;Ссылки&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.slideshare.net/AndreyDanilchenko/itmo-recsys-course-autumn-2014-lecture1-introduction-knn-svd"&gt;Слайды к лекции&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.netflixprize.com/"&gt;Netflix Prize&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://sifter.org/~simon/journal/20061211.html"&gt;Netflix Update: Try this at home&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -20,7 +34,8 @@
 &lt;li&gt;Koren Y., Bell R., Volinsky C. &lt;a href="https://yadi.sk/i/CGSXNzr4c89ZY"&gt;Matrix factorization techniques for recommender systems&lt;/a&gt; //Computer. – 2009. – Т. 42. – №. 8. – С. 30-37.&lt;/li&gt;
 &lt;li&gt;Koren Y. &lt;a href="http://yadi.sk/d/pTVIQqFP6TjWm"&gt;Factorization meets the neighborhood: a multifaceted collaborative filtering model&lt;/a&gt; //Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining. – ACM, 2008. – С. 426-434.&lt;/li&gt;
 &lt;li&gt;Pilászy I., Zibriczky D., Tikk D. &lt;a href="http://yadi.sk/d/ye_l0Z0u6vUvO"&gt;Fast als-based matrix factorization for explicit and implicit feedback datasets&lt;/a&gt; //Proceedings of the fourth ACM conference on Recommender systems. – ACM, 2010. – С. 71-78.&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrey Danilchenko</dc:creator><pubDate>Sat, 18 Oct 2014 11:05:00 +0400</pubDate><guid>tag:www.4ducks.ru,2014-10-18:itmo-rs-2014-lecture-1.html</guid></item><item><title>Предыстория лекций в ИТМО</title><link>http://www.4ducks.ru/predystoriia-lektsii-v-itmo.html</link><description>&lt;p&gt;В осеннем семестре 2014 года я провожу факультативный курс лекций по рекомендательным системам в &lt;a href="http://www.ifmo.ru/"&gt;СПб НИУ ИТМО&lt;/a&gt; на кафедре КТ ФИТиП.&lt;/p&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://www.4ducks.ru/itmo-rs-2014-lecture-2.html"&gt;Следующая лекция -&amp;gt; &lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrey Danilchenko</dc:creator><pubDate>Sat, 18 Oct 2014 11:05:00 +0400</pubDate><guid>tag:www.4ducks.ru,2014-10-18:itmo-rs-2014-lecture-1.html</guid></item><item><title>Предыстория лекций в ИТМО</title><link>http://www.4ducks.ru/predystoriia-lektsii-v-itmo.html</link><description>&lt;p&gt;В осеннем семестре 2014 года я провожу факультативный курс лекций по рекомендательным системам в &lt;a href="http://www.ifmo.ru/"&gt;СПб НИУ ИТМО&lt;/a&gt; на кафедре КТ ФИТиП.&lt;/p&gt;
 &lt;h1&gt;Предыстория&lt;/h1&gt;
 &lt;p&gt;В далеком 2012 году Антон Банных предложил мне рассказать его студентам что-нибудь про анализ данных и применение машинного обучения в Яндексе. В тот момент я начал заниматься рекомендательными системами и уже имел некоторые знания области. Я согласился и рассказал студентам четвертого курса основы рекомендаций. Но это были действительно основы — я сделал упор на &lt;a href="http://en.wikipedia.org/wiki/Association_rule_learning"&gt;ассоциативные правила&lt;/a&gt; и &lt;a href="http://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm"&gt;метод ближайших соседей&lt;/a&gt;. Немного рассказал про SVD, еще меньше - про оценку рекомендаций. Так сказать, первый блин вышел комом.&lt;/p&gt;
 &lt;p&gt;На следующий год мои познания в области существенно выросли, как и умение рассказывать эти самые азы. Я снова углубился в создание рекомендаций для Яндекс.Музыки, на этот раз в компании московских коллег. И для "быстрого старта" сделал парочку семинаров для коллег по основам коллаборативной фильтрации. И ребятам польза, и у меня в голове знания еще раз уложились.&lt;br /&gt;
