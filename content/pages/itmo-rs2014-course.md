@@ -10,7 +10,7 @@ Summary: "Содержание курса по рекомендательным 
     * SVD
     * Brief review of content-based RS
     * evaluation, experiments
-  2. SVD continued
+  2. [SVD continued]({filename}/itmo-recsys-2014/lecture2.md)
     * iALS
     * ALS1, iALS1
     * rankALS
