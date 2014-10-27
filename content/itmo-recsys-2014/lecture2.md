@@ -17,7 +17,9 @@ Summary: "Лекция 2"
  * Takács G., Tikk D. [Alternating least squares for personalized ranking](http://yadi.sk/d/lg6F-o6j6y9qq) //Proceedings of the sixth ACM conference on Recommender systems. – ACM, 2012. – С. 83-90.
  * Herlocker J. L., Konstan J. A., Riedl J. [Explaining collaborative filtering recommendations](https://yadi.sk/i/ebMoIaU0cGHHy) //Proceedings of the 2000 ACM conference on Computer supported cooperative work. – ACM, 2000. – С. 241-250.
  * Pilászy I., Tikk D. [Explaining Recommendations of Factorization-Based Collaborative Filtering Algorithms](http://yadi.sk/d/I4p_DeWg8paLQ) //Acta Technica Jaurinensis. – 2009. – Т. 2. – №. 2. – С. pp. 233-248.
+ * Kluver D., Konstan J. A. [Evaluating recommender behavior for new users](https://yadi.sk/i/uyVbyOsTcKBiZ) //Proceedings of the 8th ACM Conference on Recommender systems. – ACM, 2014. – С. 121-128.
 
 
- [ <- Предыдущая лекция]({filename}/itmo-recsys-2014/lecture1.md)
+[Содержание](/pages/itmo-rs-2014.html)  
+[ <- Предыдущая лекция]({filename}/itmo-recsys-2014/lecture1.md)
  

@@ -27,4 +27,5 @@ Summary: "Лекция 1"
  * Pilászy I., Zibriczky D., Tikk D. [Fast als-based matrix factorization for explicit and implicit feedback datasets](http://yadi.sk/d/ye_l0Z0u6vUvO) //Proceedings of the fourth ACM conference on Recommender systems. – ACM, 2010. – С. 71-78.
 
 
+[Содержание](/pages/itmo-rs-2014.html)  
 [Следующая лекция -> ]({filename}/itmo-recsys-2014/lecture2.md)
