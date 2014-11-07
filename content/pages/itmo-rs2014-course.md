@@ -15,11 +15,12 @@ Summary: "Содержание курса по рекомендательным 
     * ALS1, iALS1
     * rankALS
     * explanation
-  3. SVD environment
-    * similarities
-    * metric trees
-    * LSH, ALSH
-    * initialization
+  3. [SVD environment]({filename}/itmo-recsys-2014/lecture3.md)
+    * Oryx demo
+    * Taxonomic models
+    * Similarities
+      * metric trees
+      * LSH, ALSH
   4. Context-aware RS
     * tensor factorization
     * factorization machines
