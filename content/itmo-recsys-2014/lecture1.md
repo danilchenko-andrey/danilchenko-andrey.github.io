@@ -10,7 +10,7 @@ Summary: "Лекция 1"
 Лекция-введение. Рассказывал про рекомендательные системы в целом, о том, какие они бываю и какие данные используют.
 Разобрали kNN-модели и SVD, рассказал как применять SGD и ALS для обучения SVD. Поговорили про evaluation (общая схема и чуть более предметно про online-тестирование).
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/40706158" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<iframe src="//www.slideshare.net/slideshow/embed_code/40423604" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 ###Ссылки
  * [Netflix Prize](http://www.netflixprize.com/)
