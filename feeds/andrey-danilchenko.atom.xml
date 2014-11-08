@@ -32,7 +32,7 @@
 &lt;h3&gt;Краткое содержание&lt;/h3&gt;
 &lt;p&gt;Лекция-введение. Рассказывал про рекомендательные системы в целом, о том, какие они бываю и какие данные используют.
 Разобрали kNN-модели и SVD, рассказал как применять SGD и ALS для обучения SVD. Поговорили про evaluation (общая схема и чуть более предметно про online-тестирование).&lt;/p&gt;
-&lt;iframe src="//www.slideshare.net/slideshow/embed_code/40706158" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/40423604" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
 
 &lt;h3&gt;Ссылки&lt;/h3&gt;
 &lt;ul&gt;
