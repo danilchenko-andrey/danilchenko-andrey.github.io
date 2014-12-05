@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>4ducks</title><link href="http://www.4ducks.ru/" rel="alternate"></link><link href="http://www.4ducks.ru/feeds/itmo.atom.xml" rel="self"></link><id>http://www.4ducks.ru/</id><updated>2014-11-17T11:02:00+04:00</updated><entry><title>ITMO ML course — RecSys part 2</title><link href="http://www.4ducks.ru/itmo-ml-course-recsys-part-2.html" rel="alternate"></link><updated>2014-11-17T11:02:00+04:00</updated><author><name>Andrey Danilchenko</name></author><id>tag:www.4ducks.ru,2014-11-17:itmo-ml-course-recsys-part-2.html</id><summary type="html">&lt;h2&gt;Рекомендательные системы — часть 2&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>4ducks</title><link href="http://www.4ducks.ru/" rel="alternate"></link><link href="http://www.4ducks.ru/feeds/itmo.atom.xml" rel="self"></link><id>http://www.4ducks.ru/</id><updated>2014-12-06T12:00:00+04:00</updated><entry><title>ITMO RS 2014 ~ Lecture 4</title><link href="http://www.4ducks.ru/itmo-rs-2014-lecture-4.html" rel="alternate"></link><updated>2014-12-06T12:00:00+04:00</updated><author><name>Andrey Danilchenko</name></author><id>tag:www.4ducks.ru,2014-12-06:itmo-rs-2014-lecture-4.html</id><summary type="html">&lt;h2&gt;Advanced models&lt;/h2&gt;
+&lt;h3&gt;Краткое содержание&lt;/h3&gt;
+&lt;p&gt;Более сложные модели: Restricted Boltzmann Machines для регрессии и Bayesian Personalized Ranking для pairwise-подхода к ранжированию. И еще несколько слов о метриках.&lt;/p&gt;
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/42404700" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
+
+&lt;h3&gt;Материалы&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Salakhutdinov R., Mnih A., Hinton G. &lt;a href="http://yadi.sk/d/vF_l_BjP6tGdW"&gt;Restricted Boltzmann machines for collaborative filtering&lt;/a&gt; //Proceedings of the 24th international conference on Machine learning. – ACM, 2007. – С. 791-798.&lt;/li&gt;
+&lt;li&gt;Hinton G. &lt;a href="http://www.csri.utoronto.ca/~hinton/absps/guideTR.pdf"&gt;A practical guide to training restricted Boltzmann machines&lt;/a&gt; //Momentum. – 2010. – Т. 9. – №. 1. – С. 926.&lt;/li&gt;
+&lt;li&gt;Rendle S. et al. &lt;a href="http://arxiv.org/ftp/arxiv/papers/1205/1205.2618.pdf"&gt;BPR: Bayesian personalized ranking from implicit feedback&lt;/a&gt; //Proceedings of the Twenty-Fifth Conference on Uncertainty in Artificial Intelligence. – AUAI Press, 2009. – С. 452-461.&lt;/li&gt;
+&lt;li&gt;Rendle S., Freudenthaler C., Schmidt-Thieme L. &lt;a href="http://yadi.sk/d/ZF5CzaWq7V3kE"&gt;Factorizing personalized markov chains for next-basket recommendation&lt;/a&gt; //Proceedings of the 19th international conference on World wide web. – ACM, 2010. – С. 811-820.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="/pages/itmo-rs-2014.html"&gt;Содержание&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://www.4ducks.ru/itmo-rs-2014-lecture-3.html"&gt; &amp;lt;- Предыдущая лекция&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>ITMO ML course — RecSys part 2</title><link href="http://www.4ducks.ru/itmo-ml-course-recsys-part-2.html" rel="alternate"></link><updated>2014-11-17T11:02:00+04:00</updated><author><name>Andrey Danilchenko</name></author><id>tag:www.4ducks.ru,2014-11-17:itmo-ml-course-recsys-part-2.html</id><summary type="html">&lt;h2&gt;Рекомендательные системы — часть 2&lt;/h2&gt;
 &lt;h3&gt;Краткое содержание&lt;/h3&gt;
 &lt;p&gt;Вторая лекция о рекомендациях в рамках курса по Machine Learning.
 Говорили о том, как строить объяснения к рекомендациям.
@@ -61,7 +74,7 @@
 &lt;li&gt;Shrivastava A., Li P. &lt;a href="http://arxiv.org/pdf/1405.5869.pdf"&gt;Asymmetric LSH (ALSH) for Sublinear Time Maximum Inner Product Search (MIPS)&lt;/a&gt; //arXiv preprint arXiv:1405.5869. – 2014.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href="/pages/itmo-rs-2014.html"&gt;Содержание&lt;/a&gt;&lt;br /&gt;
-&lt;a href="http://www.4ducks.ru/itmo-rs-2014-lecture-2.html"&gt; &amp;lt;- Предыдущая лекция&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>ITMO RS 2014 ~ Lecture 2</title><link href="http://www.4ducks.ru/itmo-rs-2014-lecture-2.html" rel="alternate"></link><updated>2014-10-25T10:52:00+04:00</updated><author><name>Andrey Danilchenko</name></author><id>tag:www.4ducks.ru,2014-10-25:itmo-rs-2014-lecture-2.html</id><summary type="html">&lt;h2&gt;SVD continued&lt;/h2&gt;
+&lt;a href="http://www.4ducks.ru/itmo-rs-2014-lecture-2.html"&gt; &amp;lt;- Предыдущая лекция&lt;/a&gt; | &lt;a href="http://www.4ducks.ru/itmo-rs-2014-lecture-4.html"&gt;Следующая лекция -&amp;gt; &lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>ITMO RS 2014 ~ Lecture 2</title><link href="http://www.4ducks.ru/itmo-rs-2014-lecture-2.html" rel="alternate"></link><updated>2014-10-25T10:52:00+04:00</updated><author><name>Andrey Danilchenko</name></author><id>tag:www.4ducks.ru,2014-10-25:itmo-rs-2014-lecture-2.html</id><summary type="html">&lt;h2&gt;SVD continued&lt;/h2&gt;
 &lt;h3&gt;Краткое содержание&lt;/h3&gt;
 &lt;p&gt;Рассказ про iALS, оптимизацию ALS1 и iALS1, rank ALS. Объяснение SVD рекомендаций.&lt;/p&gt;
 &lt;iframe src="//www.slideshare.net/slideshow/embed_code/40706158" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
