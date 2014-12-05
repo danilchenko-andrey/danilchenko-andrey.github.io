@@ -21,10 +21,12 @@ Summary: "Содержание курса по рекомендательным 
     * Similarities
       * metric trees
       * LSH, ALSH
-  4. Context-aware RS
+  4. [Advanced models]({filename}/itmo-recsys-2014/lecture4.md)
+    * RBM
+    * BPR
+  5. Context-aware RS
     * tensor factorization
     * factorization machines
-  5. RBM, random walks (overview)
   6. deep learning
     * word2vec
     * RNN

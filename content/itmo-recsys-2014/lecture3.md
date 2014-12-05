@@ -20,5 +20,5 @@ Summary: "Лекция 3"
 
 
 [Содержание](/pages/itmo-rs-2014.html)  
-[ <- Предыдущая лекция]({filename}/itmo-recsys-2014/lecture2.md)
+[ <- Предыдущая лекция]({filename}/itmo-recsys-2014/lecture2.md) | [Следующая лекция -> ]({filename}/itmo-recsys-2014/lecture4.md)
  
