@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>4ducks</title><link href="http://www.4ducks.ru/" rel="alternate"></link><link href="http://www.4ducks.ru/feeds/all.atom.xml" rel="self"></link><id>http://www.4ducks.ru/</id><updated>2014-12-06T12:00:00+04:00</updated><entry><title>ITMO RS 2014 ~ Lecture 4</title><link href="http://www.4ducks.ru/itmo-rs-2014-lecture-4.html" rel="alternate"></link><updated>2014-12-06T12:00:00+04:00</updated><author><name>Andrey Danilchenko</name></author><id>tag:www.4ducks.ru,2014-12-06:itmo-rs-2014-lecture-4.html</id><summary type="html">&lt;h2&gt;Advanced models&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>4ducks</title><link href="http://www.4ducks.ru/" rel="alternate"></link><link href="http://www.4ducks.ru/feeds/all.atom.xml" rel="self"></link><id>http://www.4ducks.ru/</id><updated>2014-12-13T10:00:00+04:00</updated><entry><title>ITMO RS 2014 ~ Lecture 5</title><link href="http://www.4ducks.ru/itmo-rs-2014-lecture-5.html" rel="alternate"></link><updated>2014-12-13T10:00:00+04:00</updated><author><name>Andrey Danilchenko</name></author><id>tag:www.4ducks.ru,2014-12-13:itmo-rs-2014-lecture-5.html</id><summary type="html">&lt;h2&gt;Deep learning&lt;/h2&gt;
+&lt;h3&gt;Краткое содержание&lt;/h3&gt;
+&lt;p&gt;Deep learning, полезный в рекомендательных системах. Модели NNLM, word2vec (CBOW и Skip-Gram), doc2vec (через кластеризацию) и Paragraph vector.
+Сверточные сети на примере музыкальных рекомендаций.&lt;/p&gt;
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/42666726" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
+
+&lt;h3&gt;Материалы&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://yadi.sk/d/j9uLwCDdNAYEk"&gt;Bengio Y. et al. Neural probabilistic language models //Innovations in Machine Learning. – Springer Berlin Heidelberg, 2006. – С. 137-186.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://yadi.sk/d/ENgfjaU-ND4fn"&gt;Mikolov T. et al. Recurrent neural network based language model //INTERSPEECH. – 2010. – С. 1045-1048.&lt;/a&gt;
+ *&lt;a href="http://arxiv.org/pdf/1301.3781.pdf"&gt;Mikolov T. et al. Efficient estimation of word representations in vector space //arXiv preprint arXiv:1301.3781. – 2013.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf"&gt;Mikolov T. et al. Distributed representations of words and phrases and their compositionality //Advances in Neural Information Processing Systems. – 2013. – С. 3111-3119.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://yadi.sk/i/uAN34VkedLsG7"&gt;Morin F., Bengio Y. Hierarchical probabilistic neural network language model //AISTATS. – 2005. – Т. 5. – С. 246-252.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://musicweb.ucsd.edu/~sdubnov/Mu270d/SemanticWeb/PlaylistsMcFee.pdf"&gt;McFee B., Lanckriet G. R. G. The Natural Language of Playlists //ISMIR. – 2011. – С. 537-542.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://eng.kifi.com/from-word2vec-to-doc2vec-an-approach-driven-by-chinese-restaurant-process/"&gt;Yingjie Miao. //From word2vec to doc2vec: an approach driven by Chinese restaurant process//&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://yadi.sk/i/d2n7vosmVdHxs"&gt;Le Q. V., Mikolov T. Distributed Representations of Sentences and Documents //arXiv preprint arXiv:1405.4053. – 2014.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://papers.nips.cc/paper/5557-smoothed-gradients-for-stochastic-variational-inference.pdf"&gt;Levy O., Goldberg Y. Neural Word Embedding as Implicit Matrix Factorization //Advances in Neural Information Processing Systems. – 2014. – С. 2177-2185.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://papers.nips.cc/paper/5004-deep-content-based-music-recommendation.pdf"&gt;Van den Oord A., Dieleman S., Schrauwen B. Deep content-based music recommendation //Advances in Neural Information Processing Systems. – 2013. – С. 2643-2651.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://benanne.github.io/2014/08/05/spotify-cnns.html"&gt;Sander Dieleman. //Recommending music on Spotify with deep learning//&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://yadi.sk/d/PBTTEV2wdLrg2"&gt;Krizhevsky A., Sutskever I., Hinton G. E. Imagenet classification with deep convolutional neural networks //Advances in neural information processing systems. – 2012. – С. 1097-1105.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="/pages/itmo-rs-2014.html"&gt;Содержание&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://www.4ducks.ru/itmo-rs-2014-lecture-4.html"&gt; &amp;lt;- Предыдущая лекция&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>ITMO RS 2014 ~ Lecture 4</title><link href="http://www.4ducks.ru/itmo-rs-2014-lecture-4.html" rel="alternate"></link><updated>2014-12-06T12:00:00+04:00</updated><author><name>Andrey Danilchenko</name></author><id>tag:www.4ducks.ru,2014-12-06:itmo-rs-2014-lecture-4.html</id><summary type="html">&lt;h2&gt;Advanced models&lt;/h2&gt;
 &lt;h3&gt;Краткое содержание&lt;/h3&gt;
 &lt;p&gt;Более сложные модели: Restricted Boltzmann Machines для регрессии и Bayesian Personalized Ranking для pairwise-подхода к ранжированию. И еще несколько слов о метриках.&lt;/p&gt;
 &lt;iframe src="//www.slideshare.net/slideshow/embed_code/42404700" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
@@ -12,7 +34,7 @@
 &lt;li&gt;Rendle S., Freudenthaler C., Schmidt-Thieme L. &lt;a href="http://yadi.sk/d/ZF5CzaWq7V3kE"&gt;Factorizing personalized markov chains for next-basket recommendation&lt;/a&gt; //Proceedings of the 19th international conference on World wide web. – ACM, 2010. – С. 811-820.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href="/pages/itmo-rs-2014.html"&gt;Содержание&lt;/a&gt;&lt;br /&gt;
-&lt;a href="http://www.4ducks.ru/itmo-rs-2014-lecture-3.html"&gt; &amp;lt;- Предыдущая лекция&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>ITMO ML course — RecSys part 2</title><link href="http://www.4ducks.ru/itmo-ml-course-recsys-part-2.html" rel="alternate"></link><updated>2014-11-17T11:02:00+04:00</updated><author><name>Andrey Danilchenko</name></author><id>tag:www.4ducks.ru,2014-11-17:itmo-ml-course-recsys-part-2.html</id><summary type="html">&lt;h2&gt;Рекомендательные системы — часть 2&lt;/h2&gt;
+&lt;a href="http://www.4ducks.ru/itmo-rs-2014-lecture-3.html"&gt; &amp;lt;- Предыдущая лекция&lt;/a&gt; | &lt;a href="http://www.4ducks.ru/itmo-rs-2014-lecture-5.html"&gt;Следующая лекция -&amp;gt; &lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>ITMO ML course — RecSys part 2</title><link href="http://www.4ducks.ru/itmo-ml-course-recsys-part-2.html" rel="alternate"></link><updated>2014-11-17T11:02:00+04:00</updated><author><name>Andrey Danilchenko</name></author><id>tag:www.4ducks.ru,2014-11-17:itmo-ml-course-recsys-part-2.html</id><summary type="html">&lt;h2&gt;Рекомендательные системы — часть 2&lt;/h2&gt;
 &lt;h3&gt;Краткое содержание&lt;/h3&gt;
 &lt;p&gt;Вторая лекция о рекомендациях в рамках курса по Machine Learning.
 Говорили о том, как строить объяснения к рекомендациям.
