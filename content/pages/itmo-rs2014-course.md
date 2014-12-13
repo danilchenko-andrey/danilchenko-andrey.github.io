@@ -24,13 +24,13 @@ Summary: "Содержание курса по рекомендательным 
   4. [Advanced models]({filename}/itmo-recsys-2014/lecture4.md)
     * RBM
     * BPR
-  5. Context-aware RS
+  5. [Deep learning]({filename}/itmo-recsys-2014/lecture5.md)
+    * word2vec
+    * doc2vec
+    * music recommendations with content
+  6. Context-aware RS
     * tensor factorization
     * factorization machines
-  6. deep learning
-    * word2vec
-    * RNN
-    * music recommendations with content (если успеем)
   7. sequence methods
     * stationless/based models
     * LME

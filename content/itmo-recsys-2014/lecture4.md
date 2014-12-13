@@ -19,5 +19,5 @@ Summary: "Лекция 4"
 
 
 [Содержание](/pages/itmo-rs-2014.html)  
-[ <- Предыдущая лекция]({filename}/itmo-recsys-2014/lecture3.md)
+[ <- Предыдущая лекция]({filename}/itmo-recsys-2014/lecture3.md) | [Следующая лекция -> ]({filename}/itmo-recsys-2014/lecture5.md)
  
