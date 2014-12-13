@@ -15,7 +15,7 @@ Deep learning, полезный в рекомендательных систем
 ###Материалы
  * [Bengio Y. et al. Neural probabilistic language models //Innovations in Machine Learning. – Springer Berlin Heidelberg, 2006. – С. 137-186.](http://yadi.sk/d/j9uLwCDdNAYEk)
  * [Mikolov T. et al. Recurrent neural network based language model //INTERSPEECH. – 2010. – С. 1045-1048.](http://yadi.sk/d/ENgfjaU-ND4fn)
- *[Mikolov T. et al. Efficient estimation of word representations in vector space //arXiv preprint arXiv:1301.3781. – 2013.](http://arxiv.org/pdf/1301.3781.pdf)
+ * [Mikolov T. et al. Efficient estimation of word representations in vector space //arXiv preprint arXiv:1301.3781. – 2013.](http://arxiv.org/pdf/1301.3781.pdf)
  * [Mikolov T. et al. Distributed representations of words and phrases and their compositionality //Advances in Neural Information Processing Systems. – 2013. – С. 3111-3119.](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
  * [Morin F., Bengio Y. Hierarchical probabilistic neural network language model //AISTATS. – 2005. – Т. 5. – С. 246-252.](https://yadi.sk/i/uAN34VkedLsG7)
  * [McFee B., Lanckriet G. R. G. The Natural Language of Playlists //ISMIR. – 2011. – С. 537-542.](http://musicweb.ucsd.edu/~sdubnov/Mu270d/SemanticWeb/PlaylistsMcFee.pdf)
