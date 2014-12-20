@@ -30,5 +30,5 @@ Deep learning, полезный в рекомендательных систем
 
 
 [Содержание](/pages/itmo-rs-2014.html)  
-[ <- Предыдущая лекция]({filename}/itmo-recsys-2014/lecture4.md)
+[ <- Предыдущая лекция]({filename}/itmo-recsys-2014/lecture4.md) | [Следующая лекция -> ]({filename}/itmo-recsys-2014/lecture6.md)
  

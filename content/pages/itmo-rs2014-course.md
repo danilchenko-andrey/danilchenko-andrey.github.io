@@ -28,13 +28,13 @@ Summary: "Содержание курса по рекомендательным 
     * word2vec
     * doc2vec
     * music recommendations with content
-  6. Context-aware RS
+  6. [Sequence recommenders]({filename}/itmo-recsys-2014/lecture6.md)
+    * stationless/based models
+    * sequential item2item
+    * LME
+  7. Context-aware RS
     * tensor factorization
     * factorization machines
-  7. sequence methods
-    * stationless/based models
-    * LME
-    * sequential item2item
 
 Посты по теме: [itmo](http://www.4ducks.ru/category/itmo.html)
 
