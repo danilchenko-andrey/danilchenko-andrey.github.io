@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4ducks</title><link>http://www.4ducks.ru/</link><description>Andrey Danilchenko dev page</description><atom:link href="http://www.4ducks.ru/feeds/andrey-danilchenko.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 13 Dec 2014 10:00:00 +0400</lastBuildDate><item><title>ITMO RS 2014 ~ Lecture 5</title><link>http://www.4ducks.ru/itmo-rs-2014-lecture-5.html</link><description>&lt;h2&gt;Deep learning&lt;/h2&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4ducks</title><link>http://www.4ducks.ru/</link><description>Andrey Danilchenko dev page</description><atom:link href="http://www.4ducks.ru/feeds/andrey-danilchenko.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 20 Dec 2014 12:00:00 +0400</lastBuildDate><item><title>ITMO RS 2014 ~ Lecture 6</title><link>http://www.4ducks.ru/itmo-rs-2014-lecture-6.html</link><description>&lt;h2&gt;Sequence recommenders&lt;/h2&gt;
+&lt;h3&gt;Краткое содержание&lt;/h3&gt;
+&lt;p&gt;Рекомендации последовательностей: постановка задачи, модели station-based и stationless. Похожести item2item. LME и расширения.&lt;/p&gt;
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/42891684" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
+
+&lt;h3&gt;Материалы&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://yadi.sk/d/do6Q_y6j6buKY"&gt;Aizenberg N., Koren Y., Somekh O. Build your own music recommender by modeling internet radio streams //Proceedings of the 21st international conference on World Wide Web. – ACM, 2012. – С. 1-10.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.eng.tau.ac.il/~noamk/papers/item_based_recsys_2013.pdf"&gt;Koenigstein N., Koren Y. Towards scalable and accurate item-oriented recommendations //Proceedings of the 7th ACM conference on Recommender systems. – ACM, 2013. – С. 419-422.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://yadi.sk/d/qrwWvb8SKPJCk"&gt;Chen S. et al. Playlist prediction via metric embedding //Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining. – ACM, 2012. – С. 714-722.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://yadi.sk/d/qrwWvb8SKPJCk"&gt;Chen S. et al. Playlist prediction via metric embedding //Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining. – ACM, 2012. – С. 714-722.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cs.cornell.edu/People/tj/publications/chen_etal_13a.pdf"&gt;Chen S., Xu J., Joachims T. Multi-space probabilistic sequence modeling //Proceedings of the 19th ACM SIGKDD international conference on Knowledge discovery and data mining. – ACM, 2013. – С. 865-873.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ismir2013.ismir.net/wp-content/uploads/2013/09/220_Paper.pdf"&gt;Moore J. L. et al. TASTE OVER TIME: THE TEMPORAL DYNAMICS OF USER PREFERENCES.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jimi.ithaca.edu/~dturnbull/research/lme/lmeDemo.html"&gt;LME demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="/pages/itmo-rs-2014.html"&gt;Содержание&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://www.4ducks.ru/itmo-rs-2014-lecture-5.html"&gt; &amp;lt;- Предыдущая лекция&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrey Danilchenko</dc:creator><pubDate>Sat, 20 Dec 2014 12:00:00 +0400</pubDate><guid>tag:www.4ducks.ru,2014-12-20:itmo-rs-2014-lecture-6.html</guid></item><item><title>ITMO RS 2014 ~ Lecture 5</title><link>http://www.4ducks.ru/itmo-rs-2014-lecture-5.html</link><description>&lt;h2&gt;Deep learning&lt;/h2&gt;
 &lt;h3&gt;Краткое содержание&lt;/h3&gt;
 &lt;p&gt;Deep learning, полезный в рекомендательных системах. Модели NNLM, word2vec (CBOW и Skip-Gram), doc2vec (через кластеризацию) и Paragraph vector.
 Сверточные сети на примере музыкальных рекомендаций.&lt;/p&gt;
@@ -23,7 +39,7 @@
 &lt;li&gt;&lt;a href="https://yadi.sk/d/PBTTEV2wdLrg2"&gt;Krizhevsky A., Sutskever I., Hinton G. E. Imagenet classification with deep convolutional neural networks //Advances in neural information processing systems. – 2012. – С. 1097-1105.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href="/pages/itmo-rs-2014.html"&gt;Содержание&lt;/a&gt;&lt;br /&gt;
-&lt;a href="http://www.4ducks.ru/itmo-rs-2014-lecture-4.html"&gt; &amp;lt;- Предыдущая лекция&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrey Danilchenko</dc:creator><pubDate>Sat, 13 Dec 2014 10:00:00 +0400</pubDate><guid>tag:www.4ducks.ru,2014-12-13:itmo-rs-2014-lecture-5.html</guid></item><item><title>ITMO RS 2014 ~ Lecture 4</title><link>http://www.4ducks.ru/itmo-rs-2014-lecture-4.html</link><description>&lt;h2&gt;Advanced models&lt;/h2&gt;
+&lt;a href="http://www.4ducks.ru/itmo-rs-2014-lecture-4.html"&gt; &amp;lt;- Предыдущая лекция&lt;/a&gt; | &lt;a href="http://www.4ducks.ru/itmo-rs-2014-lecture-6.html"&gt;Следующая лекция -&amp;gt; &lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andrey Danilchenko</dc:creator><pubDate>Sat, 13 Dec 2014 10:00:00 +0400</pubDate><guid>tag:www.4ducks.ru,2014-12-13:itmo-rs-2014-lecture-5.html</guid></item><item><title>ITMO RS 2014 ~ Lecture 4</title><link>http://www.4ducks.ru/itmo-rs-2014-lecture-4.html</link><description>&lt;h2&gt;Advanced models&lt;/h2&gt;
 &lt;h3&gt;Краткое содержание&lt;/h3&gt;
 &lt;p&gt;Более сложные модели: Restricted Boltzmann Machines для регрессии и Bayesian Personalized Ranking для pairwise-подхода к ранжированию. И еще несколько слов о метриках.&lt;/p&gt;
 &lt;iframe src="//www.slideshare.net/slideshow/embed_code/42404700" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;
