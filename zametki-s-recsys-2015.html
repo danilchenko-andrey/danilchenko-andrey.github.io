@@ -60,7 +60,7 @@
       <li><a href="http://www.4ducks.ru/category/itmo.html">itmo</a></li>
       <li class="active"><a href="http://www.4ducks.ru/category/recsys.html">recsys</a></li>
     </ul> 
-    <div class="modification">Last updated: 2015-11-14 18:14</div>
+    <div class="modification">Last updated: 2015-11-14 18:16</div>
   </aside>
 
   <!-- Content -->
@@ -72,9 +72,9 @@
         </header>
         <div class="entry-content">
             <p>Содержимое флэшки: <a href="https://yadi.sk/d/ryRQA8iGjDo8r">https://yadi.sk/d/ryRQA8iGjDo8r</a></p>
-<h2>Среда</h2>
-<h3>Tutorials</h3>
-<h4>Replicable Evaluation of Recommender Systems</h4>
+<h1>Среда</h1>
+<h2>Tutorials</h2>
+<h3>Replicable Evaluation of Recommender Systems</h3>
 <p>Рассказывали Said и Bellogin.</p>
 <p>Главная идея, которую они хотят донести уже несколько лет — reproducibility исследований. Очень много статей, которые на одном датасете одним алгоритмом репортят разные результаты. Даже фреймворки этим грешат, у MyMediaLite и Mahout, например, расходится evaluation.</p>
 <p>Обычно рекоммендер считается черным ящиком, а все остальное известно.
@@ -87,61 +87,61 @@
 Потом reproduce: замеряем experimental setup на свой.
 Ну и еще можно reuse, это если мы оставляем только базовый подход (например, как метрику мерить), а все остальное меняем.</p>
 <p>Короче, вывод: логгировать все и начинать с replicate.</p>
-<h4>Scalable RS, where ML meets search</h4>
+<h3>Scalable RS, where ML meets search</h3>
 <p>Рассказывали Joachin Delgado и Diana Hu</p>
 <p>Общая идея заключается в том, что можно переформулировать различные подходы к рекомендациям (CF, CB, Knowledge based) как запросы к поиску.
 Эту идею они развивают в плагин к elasticsearch, который умеет поверх стандартного поиска (в который можно легко вкручивать ранжирование на основе бизнес-правил) добавлять ранжирование по коллаборативке (конкретно, matrix factorization). Собственно, сначала они обучают модель на спарке, потом сериализуют ее в файл и раскидывают по машинкам ES. Все это интересная идея, насколько я понимаю, это получается фактически ранжирование на базовых.
 Плюс, такое легко собрать, ES очень удобно и просто конфигурируется. Можно делать цепочки из переранжирований, засовывая туда разные бизнес-правила. ES сам все масштабирует.
 Плагинчик доступен как proof of concept. Но в go90 (стартап Verison) они это уже используют: <a href="https://github.com/sdhu/elasticsearch-prediction">https://github.com/sdhu/elasticsearch-prediction</a></p>
-<h3>Keynote: A (Persuasive?) Speech on Automated Persuasion</h3>
+<h2>Keynote: A (Persuasive?) Speech on Automated Persuasion</h2>
 <p>Очень странный кейноут, никто кажется не понял, какое это ввобще имеет отношение к рекомендациям.
 Чуваки построили систему, которая автоматически перестраивает фразы, добавляя более выраженную эмоциональную окраску. Например, good dish =&gt; delicious dish. И тому подобные системы, о которых и шла речь.</p>
-<h3>Social RS</h3>
-<h4>Overlapping Community Regularization for Rating Prediction in Social Recommender Systems</h4>
+<h2>Social RS</h2>
+<h3>Overlapping Community Regularization for Rating Prediction in Social Recommender Systems</h3>
 <p><a href="https://yadi.sk/i/2AOreTfPjDQGh">https://yadi.sk/i/2AOreTfPjDQGh</a></p>
 <p>Строится комбинация MF (обычная и обусловленная влиянием друзей), это STE (метод 2009 года). К этому прибавили способ сделать граф друзей более плотным: использование communities. Но кроме всего прочего эти communities (которые не естественные группы соцсети, а автоопределяемые) могут перекрываться. И статья как раз о том, что в этом случае делать.</p>
 <p>MFC: использовать всех членов community в разложении
 MFC+: использовать только профиль community (который средний профиль всех пользователь)</p>
 <p>Замеряют RMSE и говорят о том, что стало лучше на cold start :/
 MFC+ оказывается лучше на больших RMSD (где мнение community не согласовано)</p>
-<h4>Preference-oriented Social Networks: Group Recommendation and Inference</h4>
+<h3>Preference-oriented Social Networks: Group Recommendation and Inference</h3>
 <p><a href="https://yadi.sk/i/lGNdWeIOjDQJM">https://yadi.sk/i/lGNdWeIOjDQJM</a></p>
 <p>Рекомендации группе пользователей. Хочется принять решение для группы, но ее предпочтения неизвестны. Метод использует социальный граф, похожесть предпочтений определяется вероятностью иметь ребро в графе. Это приводит к чуть более сложной модели, потому что известные рейтинги теперь зависимые переменные.</p>
 <p>Алгоритм: по известным предпочтениям строим inferred preferences, затем уже их используем, чтобы делать group recommendations.</p>
 <p>Evaluation на синтетических данных.</p>
-<h4>A Probabilistic Model for Using Social Networks in Personalized Item Recommendation</h4>
+<h3>A Probabilistic Model for Using Social Networks in Personalized Item Recommendation</h3>
 <p><a href="https://yadi.sk/i/27nrdvfIjDQNo">https://yadi.sk/i/27nrdvfIjDQNo</a></p>
 <p>Слайды: <a href="http://ajbc.io/projects/presentations/recsys2015.pdf">http://ajbc.io/projects/presentations/recsys2015.pdf</a></p>
 <p>Какие-то предпочтения пользователей обусловлены социальным влиянием. 
 Используюю графическую модель: social poisson factorization: <a href="https://yadi.sk/i/Px_UsNJ4jDQYB">https://yadi.sk/i/Px_UsNJ4jDQYB</a>, там все очень похоже на графическую модель для обычного MF, но еще добавляется влияние профилей связанных пользователей.</p>
 <p>Замеряли nCRR (как nDCG, только без логарифмического затухания).</p>
-<h4>PushTrust: An Efficient Recommendation Algorithm by Leveraging Trust and Distrust Relations</h4>
+<h3>PushTrust: An Efficient Recommendation Algorithm by Leveraging Trust and Distrust Relations</h3>
 <p><a href="https://yadi.sk/i/RAumxUZdjDQmr">https://yadi.sk/i/RAumxUZdjDQmr</a></p>
 <p>Вводятся понятия trust и distrust. Trust транзитивен (вот это еще под вопросом), а distrust нет.</p>
 <p>Дальше добавляем оба в регуляризацию: прижимаемся к доверенным пользователям и стремимся уйти от недоверенных. Оптимизация SGD, по RMSE хорошо на cold users (cold в смысле рейтинга, но не в смысле trust)</p>
-<h3>The User in the Loop</h3>
-<h4>Letting Users Choose Recommender Algorithms: An  Experimental Study</h4>
+<h2>The User in the Loop</h2>
+<h3>Letting Users Choose Recommender Algorithms: An  Experimental Study</h3>
 <p><a href="https://yadi.sk/i/fpryDPCPjNQPb">https://yadi.sk/i/fpryDPCPjNQPb</a></p>
 <p>Что будет, если дать пользователю возможность выбирать алгоритм рекомендаций? Сравнивали четыре алгоритма: user-item, group-based, item-item, FunkSVD. Сравнивали на MovieLens на пользователях с историей. Первый алгоритм назначался случайно. 25% переключились хотя бы раз, 72% в итоге стали использовать алгоритм, отличный от начального.</p>
-<h4>"I like to explore sometimes": Adapting to Dynamic User Novelty Preferences</h4>
+<h3>"I like to explore sometimes": Adapting to Dynamic User Novelty Preferences</h3>
 <p><a href="https://yadi.sk/i/_syihnfBjNQXZ">https://yadi.sk/i/_syihnfBjNQXZ</a></p>
 <p>Пользователям иногда нравится, чтобы им рекомендовали что-то новое/неожиданное. Это желание меняется во времени. Модели вроде user-item или item-item ломаются, если у пользователя внезапно поменяются предпочтения.</p>
 <p>Familiar items определяются как множество всех айтемов, который пользователь потребил за недавнее время. Желание увидеть новое определяется как доля новых айтемов среди familiar items. На данных видно, что это желание отличается у разных юзеров в один и тот же момент времени, а у одного юзера может меняться во времени. Предлагается строить логистическую регрессию, которая будет предсказывать желание пользователя увидеть что-то новое в ближайшем будущем. Признака два: разнообразие familiar item set и negative preference for items in familiar set (насколько ему наскучили текущие айтемы; измеряется какой-то марковской моделью из другой статьи). Экспериментировали на lastfm и NDA-датасете.</p>
-<h2>Четверг</h2>
-<h3>Cold Start</h3>
-<h4>ExcUseMe: Asking Users to Help in Item Cold-Start Recommendations</h4>
+<h1>Четверг</h1>
+<h2>Cold Start</h2>
+<h3>ExcUseMe: Asking Users to Help in Item Cold-Start Recommendations</h3>
 <p><a href="https://yadi.sk/i/tPb25TgLjDR3K">https://yadi.sk/i/tPb25TgLjDR3K</a></p>
 <p>Yahoo labs</p>
 <p>Ad recommendations, очень сильный item cold start. Стандартный подход: давать пользователям на explore с фиксированным по item бюджетом (если грубо, то какое-то определенное количество раз). Здесь предлагается идея оптимизировать вероятность получения implicit feedback. Алгоритм: оптимизируется специальный вектор V_useme, ищем пользователя, отличного от тех, кто не дает фидбек, затем ищем пользователей, близких к тем, кто дал фидбек.</p>
 <p>На маленьких бюджетах дает хорошее отличие по RMSE, вероятность получить хотя бы один feedback примерно такая же, а по среднему числу implicit feedback метод дает лучший результат.</p>
-<h4>Cold-Start Item and User Recommendation with Decoupled Completion and Transduction</h4>
+<h3>Cold-Start Item and User Recommendation with Decoupled Completion and Transduction</h3>
 <p><a href="https://yadi.sk/i/URexaSJ8jDRZh">https://yadi.sk/i/URexaSJ8jDRZh</a></p>
 <p>Решают matrix completion problem, разбивая на низкоранговые подматрицы и уже на них по очереди запускают matrix completion с учетом уже заполненных частей. Подматрицу, где запустить определяют по максимальным собственным векторам.</p>
-<h4>HyPER: A Flexible and Extensible Probabilistic Framework for Hybrid Recommender Systems</h4>
+<h3>HyPER: A Flexible and Extensible Probabilistic Framework for Hybrid Recommender Systems</h3>
 <p><a href="https://yadi.sk/i/TJQurbVWjDRo9">https://yadi.sk/i/TJQurbVWjDRo9</a></p>
 <p>Строится двудольный граф рейтингов, в которых добавляются дополнительные ребра, чтобы закодировать новую информацию. Дальше через probabilistic soft logic строятся правила, которые они умеют превращать в loss function, чтобы оптимизировать.</p>
-<h3>Distinguished papers</h3>
-<h4>Applying Differential Privacy to Matrix Factorization</h4>
+<h2>Distinguished papers</h2>
+<h3>Applying Differential Privacy to Matrix Factorization</h3>
 <p><a href="https://yadi.sk/i/ne5g71uNjDTKE">https://yadi.sk/i/ne5g71uNjDTKE</a></p>
 <p>По рекомендациям, которые система дает пользователю, часто можно восстановить, что он смотрел/лайкал и тд.. Таким образом данные пользователя могут оказаться доступны злоумышленникам.</p>
 <p>Вводится шум в алгоритмы, который не сильно ухудшает качество, но делает трудным восстановление исходных рейтингов.</p>
@@ -152,12 +152,12 @@ MFC+ оказывается лучше на больших RMSD (где мнен
 4. в выходы (но тогда проблема станет невыпуклой)</p>
 <p>Private global effects: добавляем шум к bias-ам. В SGD добавляем шум к error-у. В ALS шум добавляется к результатам P и Q шагов.
 Показывают, что RMSE получается несколько хуже, чем у исходных алгоритмов, но все же лучше, чем у просто bias-ов. Забавно, что private kNN сильно лучше. Это объясняется тем, что он вероятно, более устойчив к шуму в данных.</p>
-<h4>Gaussian Ranking by Matrix Factorization</h4>
+<h3>Gaussian Ranking by Matrix Factorization</h3>
 <p><a href="https://yadi.sk/i/0cA-6A6VjDTP6">https://yadi.sk/i/0cA-6A6VjDTP6</a></p>
 <p>Netflix</p>
 <p>MF представляется в виде трехслойной нейросети. Дальше к этой сети добавляют еще два слоя поверх output (первый превращает score в ранк, второй применяет activation function, например logit). Все это оптимизируется SGD.
 Таким образом удается оптимизировать всякие разные функции ранжирования. По AUC их метод близок к SVD, по Recall@N сильно лучше.</p>
-<h4>Context-Aware Event Recommendation in Event-based Social Networks</h4>
+<h3>Context-Aware Event Recommendation in Event-based Social Networks</h3>
 <p><a href="https://yadi.sk/i/UK3DnJOQjDTeG">https://yadi.sk/i/UK3DnJOQjDTeG</a></p>
 <p><strong>Best paper</strong></p>
 <p>Мне выбор этой статьи в качестве best paper не понравился, хотя может быть, я не проникся.
@@ -168,22 +168,22 @@ MFC+ оказывается лучше на больших RMSD (где мнен
 <p>Group frequency: чем чаще пользователь принимает события группы, в которой состоит, тем больше вероятность, что примет следующее.
 Используют BPR и еще кучу хаков про контент (например, context через TF-IDF, модель для location и времени и тд). Все это засовывается в learning to rank.
 Все это очень хорошо работает на cold start, результаты по nDCG@10 жгут.</p>
-<h3>Industry 1</h3>
-<h4>Complicated TV made easy, again</h4>
+<h2>Industry 1</h2>
+<h3>Complicated TV made easy, again</h3>
 <p>Contentwise</p>
 <p>Рассуждения о том, что в рекомендациях нужно использовать контекст.</p>
-<h4>The Application of Recommender Systems in a Multi Site, Multi Domain Environment</h4>
+<h3>The Application of Recommender Systems in a Multi Site, Multi Domain Environment</h3>
 <p>Schibsted, как авито только в разы больше</p>
 <p>Стремились избавиться от popularity effect (слишком много покупателей получают отказ, а продавцу приходит много сообщений)
 Качество объявления вообще очень странная штука, ее трудно понять по взаимодействию пользователей с карточкой
 Сегментировали пользователей на две категории:
 <em> transactional users: CF работает плохо, но гибридные методы ок
 </em> buyers: показывают все категории одновременно, и новое и хорошо знакомое</p>
-<h4>We Know Where You Should Work Next Summer: Job Recommendations</h4>
+<h3>We Know Where You Should Work Next Summer: Job Recommendations</h3>
 <p>Xing, европейский аналог linkedin</p>
 <p>Обучают логистическую регрессию на простых факторах, делают ранжирование, поверх запускают фильтры и разнообразие.</p>
 <p>Проблема: пользовательский профиль показывает прошлое, но не будущие шаги (например, если чувак только что закончил PhD, то ему будут рекомедовать позиции в универах, но он-то может хотеть в индустрию!). Решение: граф переходов между позициями (строится через arules). По CTR очень хорошо помогает, acceptance rate не смотрели.</p>
-<h4>Assessing Expertise in the Enterprise: The Recommender Point of View</h4>
+<h3>Assessing Expertise in the Enterprise: The Recommender Point of View</h3>
 <p>IBM research</p>
 <p>Есть развесистое дерево skill-ов на linkedin, очень трудно формализовать. В IBM каждый skill имеет формализованное описание, но при добавлении скилла очень трудно заполнить все правильно. И они стали использовать ML, чтобы предсказывать скиллы человека</p>
 <p>Есть карточка сотрудника <a href="https://yadi.sk/i/xm0OwHVRjDWFU">https://yadi.sk/i/xm0OwHVRjDWFU</a>, но там маловато полезного. Зато можно выделить что-то из текста, который написал сам человек.
@@ -203,9 +203,9 @@ recommending new skills: используют tfidf на основе тэгов
 про каждую область собирают тэги</p>
 </li>
 </ol>
-<h2>Пятница</h2>
-<h3>Novel setups</h3>
-<h4>It Takes Two to Tango: an Exploration of Domain Pairs for Cross-Domain Collaborative Filtering</h4>
+<h1>Пятница</h1>
+<h2>Novel setups</h2>
+<h3>It Takes Two to Tango: an Exploration of Domain Pairs for Cross-Domain Collaborative Filtering</h3>
 <p><a href="https://yadi.sk/i/LUGr1djyjDWhu">https://yadi.sk/i/LUGr1djyjDWhu</a></p>
 <p>Слайды: <a href="http://www.slideshare.net/chagh/it-takes-two-to-tango-an-exploration-of-domain-pairs-for-crossdomain-collaborative-filtering">http://www.slideshare.net/chagh/it-takes-two-to-tango-an-exploration-of-domain-pairs-for-crossdomain-collaborative-filtering</a></p>
 <p>Делают cross-domain CF. Но как определить, поможет ли данный домен или нет?
@@ -215,16 +215,16 @@ recommending new skills: используют tfidf на основе тэгов
 <p>В кулуарах пообщались со Шломо Берковским (один из отцов cross-domain рекомендаций), он рассказал, что готовится к изданию вторая редакция хэндбука, даже прислал мне драфт своей главы про cross domain. Но это походу туториал Cremonesi с прошлого рексиса, положенный на бумагу.</p>
 <p>toc: <a href="https://yadi.sk/i/PRGV8PL0jDbax">https://yadi.sk/i/PRGV8PL0jDbax</a>
 их глава: <a href="https://yadi.sk/i/LgLF029hjDbWg">https://yadi.sk/i/LgLF029hjDbWg</a></p>
-<h4>Recommending Fair Payments for Large-Scale Social Ridesharing</h4>
+<h3>Recommending Fair Payments for Large-Scale Social Ridesharing</h3>
 <p><a href="https://yadi.sk/i/fSj9B1VfjDWtg">https://yadi.sk/i/fSj9B1VfjDWtg</a></p>
 <p>Соцсеть шаринга поездок на машине. Смотрят на оптимальные "коалиции" среди друзей по соцсети. Проблема: как посчитать стоимость поездки для каждого участника. Ввели мутную идею стабильности платежа, чтобы уравновешивать платежи всех участников (хотя казалось бы, это не обязательно).</p>
 <p>Интересное следствие: чем больше степень вершины к соц-графе (больше друзей-соседей), тем меньше стоимость поездки. Логично, у человека больше шансов пошарить поездку с соседями.</p>
-<h4>Learning Distributed Representations from Reviews for Collaborative Filtering</h4>
+<h3>Learning Distributed Representations from Reviews for Collaborative Filtering</h3>
 <p><a href="https://yadi.sk/i/Fy_FmcM2jDXDG">https://yadi.sk/i/Fy_FmcM2jDXDG</a></p>
 <p>Multitask learning - это еще один способ сделать регуляризацию. Идея в том, что вместо обычной L2 регуляризации добавляется еще одна оптимизационная задача из другого домена. В данном случае вместе с Matrix factorization учат модель (DBoW из word2vec и RecurrentNN) для описания текстов ревью.
 Добавляли такую регуляризацию только по item векторам, пользовательские никак не регуляризуются (у них так получилось лучше). Обычной регуляризации нет. Получается лучше, чем просто регуляризованный SVD.</p>
-<h3>Industry</h3>
-<h4>Large-Scale Real-Time Product Recommendation At Criteo</h4>
+<h2>Industry</h2>
+<h3>Large-Scale Real-Time Product Recommendation At Criteo</h3>
 <p>800k rps!!!
 &lt;10ms на решение, &lt;100ms на рекомендацию
 largest Hadoop in Europe &gt;35Pb</p>
@@ -235,7 +235,7 @@ largest Hadoop in Europe &gt;35Pb</p>
 <p>На оффайне считают best, best of, similarities (250M keys), complementaries (50M keys). В рантайме все хранять в memcache. Для ML используют logistic regression ("scales and fast", хотя кажется, что можно было и поинтереснее что-нибудь), используя hashing trick.
 На оффлайне используют машину времени и работают над counterfactual reasoning.
 Есть датасет на kaggle</p>
-<h4>Challenges Encountered Scaling Up Recommendation Services</h4>
+<h3>Challenges Encountered Scaling Up Recommendation Services</h3>
 <p>Gravity R&amp;D
 В основном был рассказ о подводных камнях, которые находили в GravityRD.</p>
 <p>Очень быстро отвечают: 10-30мс, 140M requests/day
@@ -245,34 +245,34 @@ largest Hadoop in Europe &gt;35Pb</p>
 Реализовано больше 100 алгоритмов, но самые простые работают в большинстве задач.</p>
 <p>В кулуарах порасспрашивал поподробнее. У них все в памяти, стараются максимально использовать offline и near realtime (например, kNN обновляется с SLA 5 секунд!). Нарывались на баги в gc. В результате пришли к схеме, где gc планируется. Машинку отключают от траффика, запускают full gc, потом снова включают трафик.
 Есть команда исследований 4 человека (Балаш Хидаси руководит), которая занимается новыми разработками. Они имплементят почти все интересные алгоритмы, которые находят в статьях. Есть команда, которая пилит общие компоненты, есть команда, которая подключает клиентов. Само подключение занимает от 48 часов до года в зависимости от сложности области и данных. Хотят давать js-блок, чтобы в пару кликов подключать данные клиента. Каждый месяц у клиента есть один день сотрудника поддержки. Но обычно первые полгода-год ничего не допиливают. Вот уже дальше могут быть улучшения.</p>
-<h4>Recommendations in Travel</h4>
+<h3>Recommendations in Travel</h3>
 <p>booking.com</p>
 <p>Стандартные MF методы в их области не работают =( Кроме того, очень высока цена неверной рекомендации. В результате у них очень много чего выделяется из текстов и делается CB. Плюс, они рассказывают про все ML алгоритмы внутри отелям. Это часть правил честного ранжирования.</p>
-<h4>Making Meaningful Restaurant Recommendations At OpenTable</h4>
+<h3>Making Meaningful Restaurant Recommendations At OpenTable</h3>
 <p>32k ресторанов, 17M посетителей seated monthly
 Для похожестей ials и CB смешанные как a/r1 + (1-a)/r2</p>
 <p>Активно используют word2vec для поиска зависимостей (например, могут порекомендовать подходящее вино). Кроме того, с помощью word2vec решают задачу рекомендации в незнакомом городе.</p>
 <p>Ранжирование делается через one vs all логистической регрессией с l1 регуляризатором. Но начали делать factorization machines, чтобы засовывать контексты.</p>
-<h4>The Role of User Location in Personalized Search and Recommendation</h4>
+<h3>The Role of User Location in Personalized Search and Recommendation</h3>
 <p>Ido Guy, Yahoo labs</p>
 <p>Рассказывал, как отличается поиск из знакомых и незнакомых мест. Определяют знакомые места по тому, как часто видели там пользователя (тут очень трудно, если пользователь поехал надолго в отпуск).
 Вся эта техника отлично помогает делать поисковые подсказки.</p>
-<h3>News and Media</h3>
-<h4>Predicting Online Performance of News Recommender Systems Through Richer Evaluation Metrics</h4>
+<h2>News and Media</h2>
+<h3>Predicting Online Performance of News Recommender Systems Through Richer Evaluation Metrics</h3>
 <p><a href="https://yadi.sk/i/DkRWIMWRjDZsV">https://yadi.sk/i/DkRWIMWRjDZsV</a></p>
 <p>Хотят изобрести такую метрику, которая будет на offline работать так же, как на online.</p>
 <p>Метрики: accuracy, diversity, coverage, serendipity, novelty, etc. Дальше учат комбинацию метрик, чтобы правильно предсказывать CTR.</p>
 <p>Пошли дальше и подобрали параметры алгоритма на offline и через AB. Результаты сошлись.</p>
 <p>Еще интересно, что accuracy имеет не самую лучшую корреляцию с CTR.</p>
-<h3>Beyond “Hitting the Hits” – Generating Coherent Music Playlist Continuations with the Right Tracks</h3>
+<h2>Beyond “Hitting the Hits” – Generating Coherent Music Playlist Continuations with the Right Tracks</h2>
 <p><a href="https://yadi.sk/i/Ytoert3djDa65">https://yadi.sk/i/Ytoert3djDa65</a></p>
 <p>Дитмар Яннах и компания в своем универе строят online радио (но чисто для науки, даже прототипа нет).</p>
 <p>Построение радио состоит из двух фаз: сначала ранжируют (kNN + тэги от last.fm) и отбирают top-30 треков. Затем выбирают перестановку, оптимальную с точки зрения разницы в числовых фичах с предыдущей историей пользователя. Так радиопоток становится более когерентным.</p>
-<h2>Суббота</h2>
+<h1>Суббота</h1>
 <p>день неинтересных воркшопов</p>
-<h3>RecSysTV</h3>
+<h2>RecSysTV</h2>
 <p><a href="http://www.contentwise.tv/recsystv2015/">http://www.contentwise.tv/recsystv2015/</a></p>
-<h4>Recommending TV News and Circumventing The Filter Bubble</h4>
+<h3>Recommending TV News and Circumventing The Filter Bubble</h3>
 <p>Thomson Reuters</p>
 <p>примерно 2M историй, 200k видео
 mobile news broadcast app
@@ -287,57 +287,57 @@ true pref ~ Beta(a, b)
 play|pref ~ Bernoulli(pref)
 Еще проблема в том, что на самом деле мы не знаем много про пользователя, делают explore exploit. Knowledge gradient хорошо работает когда совсем мало данных, потом томсон сэмплинг (как именно непонятно было).
 Для сборки эфира используют "dynamic programming optimal solution".</p>
-<h4>Social video recommendations: From the ground up</h4>
+<h3>Social video recommendations: From the ground up</h3>
 <p>Verison</p>
 <p>Рассказывали про свой стартап go90 (запустится на днях). Суть в том, что они комбинируют обычный видеоконтент с роликами из интернета. Проблемы в основном с метаданными. Делают очень много NLP, включая субтитры! Начали делать computer vision на видеопотоке.</p>
 <p>Как раз тут используют свой плагин к Elasticsearch.</p>
-<h4>Relevance of Social Data in Video Recommendation</h4>
+<h3>Relevance of Social Data in Video Recommendation</h3>
 <p><a href="https://comcast.app.box.com/recsystv-2015-xu">https://comcast.app.box.com/recsystv-2015-xu</a></p>
 <p>Adobe research</p>
 <p>С одной стороны есть рейтинги фильмов, с другой стороны данные твиттера. Сделали приложение movie tweeting app.</p>
 <p>dataset: 27500 users, 161k movies, 239k ratings, 41023 followings
 Очень сильно его проредили и устроили линейную комбинацию kNN-ов по рейтингам и соцсети (коэффициент похожести по соцсети может меняться с силой связи). Еще пробовали совместную оптимизацию MF по двум матрицам (от соцсети и рейтингов) и factorization machines. Их подход, конечно же, лучше. Но данных там осталось как кот наплакал, скорее всего, это все не значимо.</p>
-<h4>Using Social Media data for Online Television Recommendation Services at RTÉ Ireland</h4>
+<h3>Using Social Media data for Online Television Recommendation Services at RTÉ Ireland</h3>
 <p><a href="https://comcast.app.box.com/recsystv-2015-barraza-urbina">https://comcast.app.box.com/recsystv-2015-barraza-urbina</a></p>
 <p>Похоже на предыдущую.</p>
 <p>С одной стороны preferences из их сервиса, с другой стороны implicit информация из твиттера. Из твита выделяют конкретную программу и эпизод плюс открытые каталоги IMDB, DBPedia.</p>
 <p>Связывают user x tweet и tweet x program матрицы.</p>
-<h4>Exploiting crowdsourced movie reviews to explain recommendation</h4>
+<h3>Exploiting crowdsourced movie reviews to explain recommendation</h3>
 <p><a href="https://comcast.app.box.com/recsystv-2015-aouad">https://comcast.app.box.com/recsystv-2015-aouad</a></p>
 <p>Можно показывать просто похожие item-ы, но хочется объяснять.</p>
 <p>Идея: разделим похожести на группы по жанру и будем персонализировать эти группы пользователю.</p>
 <p>Разбиение по жанрам, для объяснения выделяют слова из тем от LDA. Внутри группы ранжирование по MF методу.</p>
 <p><a href="http://muse.inria.fr/tagit">http://muse.inria.fr/tagit</a>
 данные: 2k фильмов c IMDB, 100 пользователей =(</p>
-<h4>How smart is your data? The new differentiator for video operators</h4>
+<h3>How smart is your data? The new differentiator for video operators</h3>
 <p>Spideo</p>
 <p>лучший способ делать рекомендации должен включать общение на натуральном языке!
 Делают динамически меняющийся текстовый профиль пользователя.</p>
 <p>Еще у них клевые дашборды: например, в разрезе по настроениям сколько всего фильмов, сколько просмотрено, сколько порекомендовано.</p>
-<h4>Context-aware LDA: Balancing Relevance and Diversity in TV Content Recommenders</h4>
+<h3>Context-aware LDA: Balancing Relevance and Diversity in TV Content Recommenders</h3>
 <p><a href="https://comcast.app.box.com/recsystv-2015-yuan">https://comcast.app.box.com/recsystv-2015-yuan</a></p>
 <p>Есть данные видеоплатформы, выкидывают проигрывания &lt; 15 секунд и &lt; 15% и пользователей &lt; 10 просмотров.</p>
 <p>Контекст: live/vod и время (time of day, day of week)</p>
 <p>Просто LDA работает плохо, а вот context-LDA (добавили контексты в графическую модель) начиная с первых десятков в размерности бьет их бейлайны по nDCG@K, recall@K</p>
 <p>Смотрят в тч в разрезе "просто рекомендации" и "с учетом текущей программы".</p>
-<h4>New Quality Measure of Linear Ads in Online Videos</h4>
+<h3>New Quality Measure of Linear Ads in Online Videos</h3>
 <p><a href="https://comcast.app.box.com/recsystv-2015-kar">https://comcast.app.box.com/recsystv-2015-kar</a></p>
 <p>Adobe</p>
 <p>linear ads (реклама встраивается в каком-то месте в ролик, например, в начале).
 Оптимизируют continuation rate (средняя вероятность неуйти по всем просмотрам), используя utility рекламного ролика и линейную модель на фичах ролика.
 В результате хорошо увеличивает метрики, еще оказывается, про preroll и первые мидроллы дают больше продолжающихся сессий.</p>
-<h3>CrowdRec</h3>
+<h2>CrowdRec</h2>
 <p><a href="http://www.crowdrecworkshop.org">http://www.crowdrecworkshop.org</a></p>
-<h4>Changing mobility behavior through recommendations</h4>
+<h3>Changing mobility behavior through recommendations</h3>
 <p>Идея в том, чтобы порекомедовать события куда пойти по дороге домой, чтобы переждать пробки.</p>
 <p>Посылают напоминания или прямо в приложении можно получить рекомендацию, дальше человек едет и участвует в том, что ему предложили, за это начисляются баллы и бейджи.</p>
 <p>Через некоторое время померили поведение людей, примерно половина приняла игру и изменила свое поведение.</p>
-<h4>An Adaptive Implicit Feedback Model for Short Clips Recommendations</h4>
+<h3>An Adaptive Implicit Feedback Model for Short Clips Recommendations</h3>
 <p>Мутная статья про рекомендацию роликов. Длину проигрывания превращают в рейтинг (адаптивно подстраивая распределение по рейтингам). Кажется, можно и лучше.</p>
-<h2>Воскресенье</h2>
+<h1>Воскресенье</h1>
 <p>Интересный LSLR</p>
-<h3>Large scale RS</h3>
-<h4>Keynote: Scaling RS research</h4>
+<h2>Large scale RS</h2>
+<h3>Keynote: Scaling RS research</h3>
 <p><a href="https://dato.com/files/lsrs2015/lsrs15_ekstrand.pdf">https://dato.com/files/lsrs2015/lsrs15_ekstrand.pdf</a></p>
 <p>Michael Ekstrand рассказывал про large scale evaluation. </p>
 <p>Идеи: 
@@ -346,12 +346,12 @@ play|pref ~ Bernoulli(pref)
 <em> некоторые гиперпараметры можно подбирать на очень маленьком подмножестве данных
 </em> из оффлайн тестов стоит выбрать лучшие, но очень разные! результаты для online теста. Оффлайн тесты часто не совпадают с онлайном, но эта история в основном про accuracy (см. статью EPFL).
 * бандиты хороши, чтобы быстро найти лучший алгоритм. но будет очень трудно понять, почему он лучше.</p>
-<h4>Large scale music recommendation @ Pandora</h4>
+<h3>Large scale music recommendation @ Pandora</h3>
 <p>Много вау-вау и бла-бла. Pandora всегда показывает красивые картинки, но очень чего не рассказывает из внутренней кухни.</p>
 <p>Внутри радио 50 моделей обучаются на разные таргеты, потом все это в ансамбль, который динамически подстраивается. Алгоритмы у них простые, но очень много данных. Параметры ансамбля персонализированы.</p>
 <p>В рекомендациях радиостанций идея оптимизировать не CTR, а конверсию. Это приводит к лучшему росту long-term метрик.</p>
 <p>UI (особенно на мобильниках) решает больше, чем качество алгоритмов.</p>
-<h4>Travoltify - The Dance moment</h4>
+<h3>Travoltify - The Dance moment</h3>
 <p><a href="https://dato.com/files/lsrs2015/lsrs15_spotify.pdf">https://dato.com/files/lsrs2015/lsrs15_spotify.pdf</a></p>
 <p>Spotify</p>
 <p>Рекомендации музыки для определенного танца. В качестве примера взяли буги.</p>
@@ -360,14 +360,14 @@ play|pref ~ Bernoulli(pref)
 2. дальше выделяют подмножество каталога с высоким скором классификатора
 3. запускают factorization machines на подмножестве (используя в тч dance relevance из предыдущего классификатора)</p>
 <p>Для обучения классификатора 76k треков танца (авторазметка?) и 125k рандом по популярности.</p>
-<h4>Large Scale Music Recommendation</h4>
+<h3>Large Scale Music Recommendation</h3>
 <p><a href="https://dato.com/files/lsrs2015/lsrs15_turin.pdf">https://dato.com/files/lsrs2015/lsrs15_turin.pdf</a></p>
 <p>Contentwise</p>
 <p>Рекомендуют следующий трек на основе истории прослушиваний. Но все в offline тестах.</p>
 <p>Собрали датасет: <a href="http://recsys.deib.polimi.it/?page_id=54">http://recsys.deib.polimi.it/?page_id=54</a></p>
 <p>Разбили данные на сессии и разделили на трейновые и тестовые сессии (данные за год, тест за 3 месяца, переобучения модели в ходе теста нет).</p>
 <p>Выиграли у очень странных бейзлайнов.</p>
-<h4>Neighbor methods vs. matrix factorization: case studies of real-life recommendations</h4>
+<h3>Neighbor methods vs. matrix factorization: case studies of real-life recommendations</h3>
 <p><a href="http://www.slideshare.net/domonkostikk/neighbor-methods-vs-matrix-factorization-case-studies-of-reallife-recommendations-gravity-lsrs2015-recsys-2015">http://www.slideshare.net/domonkostikk/neighbor-methods-vs-matrix-factorization-case-studies-of-reallife-recommendations-gravity-lsrs2015-recsys-2015</a></p>
 <p><strong>Доклад от Gravity, разрушающий легенды</strong></p>
 <p>После Netflix Prise они сделали демку для инвесторов. Но качество было плохое, шумела популярность. Убрали user bias, стало получше. Еще пробовали ставить bias-ы в ноль перед построением пользовательских профилей, тоже хорошо работало.</p>
@@ -382,32 +382,32 @@ play|pref ~ Bernoulli(pref)
 <li>для taste-based feedback ок</li>
 <li>лучше попробовать смешивание и обязательно AB</li>
 </ul>
-<h4>Unifying the problem of Search and Recommendations at OpenTable</h4>
+<h3>Unifying the problem of Search and Recommendations at OpenTable</h3>
 <p>Поиск может использовать CF output как одну из фичей, еще нужно контекст, плюс что-то можно смайнить из NLP анализа запроса.</p>
 <p>Если нет данных, то хороши эвристические правила для выбора продуктов (суши плохо на завтрак), если мало данных - простые статистики.</p>
 <p>Есть metric gap (train error, generalization error, online error). Они используют online learning (бандитов), но надо обязательно валидировать через AB.</p>
 <p>Еще говорили про trust (типа не скрывать доступ к сырым данным). Например, у них новый пользователь читает все ревью, а потом уже начинает верить их рейтингу и рекомендациям.</p>
-<h4>Learning from Lack of Clicks, Learning from Lack of Likes: Two Applications in the Domain of Content Discovery</h4>
+<h3>Learning from Lack of Clicks, Learning from Lack of Likes: Two Applications in the Domain of Content Discovery</h3>
 <p><a href="https://dato.com/files/lsrs2015/lsrs15_outbrain.pdf">https://dato.com/files/lsrs2015/lsrs15_outbrain.pdf</a></p>
 <p>Outbrain</p>
 <p>Рекомедовать одно и то же — не оптимальная стратегия. Смотрят на падение CTR в зависимости от того, когда и где и сколько раз пользователь уже видел эту рекомендацию.</p>
 <p>Вторая идея: users are likely to share socially acceptable content</p>
-<h4>Building Actionable Recommendations for Sellers to Help Improve their eBay</h4>
+<h3>Building Actionable Recommendations for Sellers to Help Improve their eBay</h3>
 <p>eBay</p>
 <p>Интересный доклад про рекомендацию цены, которую делают тому, кто размещает объявление на eBay.</p>
 <p>Смотрят на похожие продукты (по тексту и метаданным), потом вкручивают ML и бизнес-правила. Делают отдельно сэмплинг для недорогих продуктов, тк там их предсказание заметно хуже.</p>
 <p>Для B2C делают рекомендации вида: если вы повысите цену на 5$, то продажи упадут на столько-то. Но еще не в проде.</p>
-<h3>INRA</h3>
+<h2>INRA</h2>
 <p>зачем-то сходил на два доклада из новостного воркшопа. Это все bullshit, очень слабые работы.</p>
-<h4>Survey of User Profiling in News Recommender Systems</h4>
+<h3>Survey of User Profiling in News Recommender Systems</h3>
 <p>бла-бла-бла про отличия от обычных рекоммендеров</p>
 <p>модель пользователя: выделение тем и сущностей (проблемы синонимов?)
 Требуется учитывать время (например, день недели или время суток) и long-term/short-term preferences.</p>
-<h4>News2Images: Automatically Summarizing News Articles into Image-Based Contents via Deep Learning</h4>
+<h3>News2Images: Automatically Summarizing News Articles into Image-Based Contents via Deep Learning</h3>
 <p>Корейский NAVER</p>
 <p>Задача: по новости найти related картинки. word2vec на текстах, ищут похожие документы. Есть ConvNN, обученная на мультиклассификацию персон. Дальше по картинкам похожих документов запускают сеть и замеряют точность определения персоны. Мутная задача, кривой evaluation.</p>
-<h3>Content based RS</h3>
-<h4>The continuous cold-start problem in e-commerce recommender systems</h4>
+<h2>Content based RS</h2>
+<h3>The continuous cold-start problem in e-commerce recommender systems</h3>
 <p>Booking.com</p>
 <p>Работа моей бывшей коллеги из Яндекса. Перед отпуском в Питере общался с ее профом Яппом.</p>
 <p>идея: пользователь всегда в cold start.
