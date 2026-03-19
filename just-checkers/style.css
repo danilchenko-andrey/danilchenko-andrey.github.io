@@ -1,0 +1,261 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #0f1117;
+  color: #e8eaf0;
+  min-height: 100vh;
+}
+
+/* ===== Layout ===== */
+.page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+/* ===== Typography ===== */
+h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  line-height: 1.65;
+  color: #b0b8cc;
+  margin-top: 0.5rem;
+}
+
+a {
+  color: #7b8cad;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #e8eaf0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #3a3d4a;
+  margin: 3rem 0;
+}
+
+.effective-date {
+  color: #7b8cad;
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ===== Navigation ===== */
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #3a3d4a;
+}
+
+.site-nav .site-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #e8eaf0;
+  text-decoration: none;
+}
+
+.site-nav .site-title:hover {
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #7b8cad;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+  color: #e8eaf0;
+}
+
+.nav-links .active {
+  color: #e8eaf0;
+}
+
+.lang-switch {
+  padding-left: 1.25rem;
+  border-left: 1px solid #3a3d4a;
+}
+
+/* ===== Landing: Hero ===== */
+.hero {
+  text-align: center;
+  padding: 1.5rem 0 2rem;
+}
+
+.app-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 22%;
+}
+
+.app-name {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.tagline {
+  font-size: 1.05rem;
+  color: #b0b8cc;
+  margin: 0.5rem 0 1.5rem;
+}
+
+
+/* ===== Landing: Features ===== */
+.features-section {
+  margin-top: 2rem;
+}
+
+.features {
+  list-style: none;
+  margin-top: 0.75rem;
+}
+
+.features li {
+  padding: 0.45rem 0;
+  color: #b0b8cc;
+  line-height: 1.5;
+}
+
+.features li::before {
+  content: "\2713\0020";
+  color: #7b8cad;
+  font-weight: 600;
+}
+
+/* ===== Landing: Screenshots ===== */
+.screenshots-section {
+  margin-top: 2rem;
+}
+
+.screenshots {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.screenshots img {
+  width: 200px;
+  border-radius: 12px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+/* ===== Support: Contact Box ===== */
+.contact-box {
+  background: #1a1d27;
+  border: 1px solid #3a3d4a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.contact-box p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-box a {
+  font-size: 1.1rem;
+}
+
+/* ===== Support: FAQ ===== */
+.faq {
+  margin-top: 1.5rem;
+}
+
+.faq details {
+  border-bottom: 1px solid #3a3d4a;
+  padding: 0.75rem 0;
+}
+
+.faq summary {
+  cursor: pointer;
+  color: #e8eaf0;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.faq summary:hover {
+  color: #fff;
+}
+
+.faq details[open] summary {
+  margin-bottom: 0.5rem;
+}
+
+.faq details p {
+  font-size: 0.95rem;
+  padding-left: 0.5rem;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #3a3d4a;
+  font-size: 0.85rem;
+  color: #7b8cad;
+}
+
+.site-footer a {
+  color: #7b8cad;
+}
+
+.footer-links {
+  margin-top: 0.25rem;
+}
+
+.footer-links a {
+  margin-right: 1rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+  .screenshots img {
+    width: 160px;
+  }
+
+  .hero {
+    padding: 1rem 0;
+  }
+
+  .nav-links {
+    gap: 0.75rem;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+  }
+}
