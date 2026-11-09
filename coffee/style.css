@@ -73,4 +73,4 @@ input::-webkit-datetime-edit{min-width:0;padding:0}
 .legend{flex-wrap:wrap;column-gap:12px;row-gap:7px}
 .legend i.flatwhite{background:#64b5ff}
 .entryname{min-width:0;overflow-wrap:anywhere}.entrydose{white-space:nowrap}
-@media(max-width:360px){.legend{font-size:10px;column-gap:9px}.entry{gap:8px;padding-inline:11px}}
+@media(max-width:360px){#cupForm .two{grid-template-columns:1fr;gap:0}#cupForm .two label{margin-block:10px}.legend{font-size:10px;column-gap:9px}.entry{gap:8px;padding-inline:11px}}
