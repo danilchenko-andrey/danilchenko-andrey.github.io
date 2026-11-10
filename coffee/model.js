@@ -4,4 +4,4 @@ export function absorption(half,peak=.75){const key=half+":"+peak;if(rates.has(k
 export function remaining(dose,hours,half=5){if(hours<=0)return 0;const ke=Math.LN2/half,ka=absorption(half);return dose*ka/(ka-ke)*(Math.exp(-ke*hours)-Math.exp(-ka*hours));}
 export function total(entries,at,half){return entries.reduce((s,e)=>s+remaining(e.dose,(at-e.at)/HOUR,half),0);}
 export function localDate(t=Date.now()){const d=new Date(t);return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;}
-export function clock(t){return new Date(t).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'});}
+export function clock(t){return new Date(t).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',hourCycle:'h23'});}

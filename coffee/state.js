@@ -1,4 +1,4 @@
-export const names={caramello:'Caramello',vanilla:'Vaniglia Decaffeinato',flatwhite:'Flat white'};
+export const names={caramello:'Caramello',vanilla:'Vanilla Decaf',flatwhite:'Flat white'};
 export const defaults={half:5,bed:'23:00',target:20,caramello:60,vanilla:3,flatwhite:130};
 // Add new presets without rewriting historical cup doses or existing preferences.
 // Both the original export format and the extended format remain valid.

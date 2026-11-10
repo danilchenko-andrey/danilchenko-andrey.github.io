@@ -1,6 +1,6 @@
 // Scope all storage and interception to this app, never the rest of GitHub Pages.
 const PREFIX='coffee-pwa-'+new URL(self.registration.scope).pathname;
-const CACHE=PREFIX+'v4';
+const CACHE=PREFIX+'v5';
 const ASSETS=['./','./index.html','./style.css','./app.js','./model.js','./state.js','./manifest.webmanifest','./icon-192.png','./icon-512.png','./icon.svg'].map(p=>new URL(p,self.registration.scope).href);
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith(PREFIX)&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
